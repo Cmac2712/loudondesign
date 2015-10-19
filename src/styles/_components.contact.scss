@@ -1,0 +1,100 @@
+.contact--outer {
+    background-color: $ui-color--dark;
+    border-bottom: 5px solid $brand-color;
+    color: #fff;
+    padding: $spacing-unit * 5 0;
+}
+
+body {
+    //transform: translate3d(0, -283px, 0);
+    //transition: transform .25s ease;
+}
+
+.show-contact {
+    //transform: translate3d(0, 0, 0);
+    //transition: transform .25s ease;
+}
+
+.contact--outer {
+    overflow: hidden;
+    //max-height: 0;
+    padding: 0;
+}
+
+.contact--outer .wrap {
+    padding-top: $spacing-unit * 5;
+    padding-bottom: $spacing-unit * 5;
+}
+
+    .contact--outer.active {
+//	padding: $spacing-unit * 5;
+    }
+
+.contact--inner { @include outer-container(100%); }
+
+    .contact__details {
+	padding-right: $spacing-unit * 5;
+
+	//@include media() {}
+    }
+    
+	.contact--intro {
+	    @include span-columns(12);	
+	    
+	    @media screen and (min-width: $menu-switch) {
+		@include span-columns(6);	
+	    }
+
+	    @media screen and (min-width: $desk-start) {
+		@include span-columns(5);	
+	    }
+	}
+	
+	.contact--methods {
+	    @include span-columns(12);	
+
+	    @media screen and (min-width: $menu-switch) {
+		@include span-columns(6);	
+	    }
+	    
+	    @media screen and (min-width: $desk-start) {
+		@include span-columns(3);	
+	    }
+	}
+
+	.contact--address {
+	    @include span-columns(12);	
+
+	    @media screen and (min-width: $menu-switch) {
+		@include span-columns(6);	
+	    }
+	    
+	    @media screen and (min-width: $desk-start) {
+		@include span-columns(2);	
+	    }
+	}
+
+	.contact--clock {
+	    @include span-columns(12);	
+	    padding-right: 0;
+
+	    @media screen and (min-width: $menu-switch) {
+		@include span-columns(6);	
+	    }
+	    
+	    @media screen and (min-width: $desk-start) {
+		@include span-columns(2);	
+	    }
+	}
+
+.contact__details h2 {
+    @extend .gamma;
+    margin-bottom: $spacing-unit;
+    color: $brand-color;
+}
+
+.contact__details [style="text-decoration: underline;"] {
+    text-decoration: none!important;
+    border-bottom: 2px solid $brand-color;
+    @extend .underline;	
+}

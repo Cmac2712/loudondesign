@@ -1,0 +1,94 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@mixin media-query($media-query){
+            
+    @if $media-query == palm-small{
+	@media only screen and (max-width:$small-end) { @content; }
+    }
+    @if $media-query == palm{
+	@media only screen and (max-width:$palm-end) { @content; }
+    }
+    @if $media-query == palm-large{
+	@media only screen and (min-width:$lap-start) and (max-width:$lap-reg-start) { @content; }
+    }
+    @if $media-query == lap{
+	@media only screen and (min-width:$lap-start) and (max-width:$lap-end) { @content; }
+    }
+    @if $media-query == lap-and-up{
+	@media only screen and (min-width:$lap-start) { @content; }
+    }
+    @if $media-query == portable{
+	@media only screen and (max-width:$lap-end) { @content; }
+    }
+    @if $media-query == desk{
+	@media only screen and (min-width:$desk-start) { @content; }
+    }
+    @if $media-query == only-desk{
+	@media only screen and (min-width:$desk-start) and (max-width: $desk-end) { @content; }
+    }
+    @if $media-query == lap-desk{
+	@media only screen and (min-width:$lap-start) and (max-width: $desk-end) { @content; }
+    }
+    @if $media-query == desk-end{
+	@media only screen and (max-width: $desk-end) { @content; }
+    }
+    @if $media-query == desk-wide{
+	@media only screen and (min-width: $desk-wide-start) { @content; }
+    }
+
+    @if $media-query == desk-super{
+	@media only screen and (min-width: $desk-super-start) { @content; }
+    }
+
+    @if $media-query == desk-hd{
+	@media only screen and (min-width: $desk-hd-start) { @content; }
+    }
+	
+}
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+}
+
+@mixin shadow () {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+}
+
+@mixin arrow ($direction: left, $size: $spacing-unit, $color: $brand-color) {
+    position: relative;
+
+    &:after{
+	content: "";	
+	position: absolute;
+	width: 0;
+	height: 0;
+
+	@if ($direction == left) {
+	    left: -$size;
+	    $top: $size;
+	    border-top: $size solid transparent;
+	    border-bottom: $size solid transparent; 
+	    border-right: $size solid $color;  
+	    border-left: 0;  
+	}
+
+	@if ($direction == right) {
+	    right: -$size;
+	    $top: $size;
+	    border-top: $size solid transparent;
+	    border-bottom: $size solid transparent; 
+	    border-left: $size solid $color;  
+	}
+
+	@if ($direction == top) {
+	    top: -$size;
+	    left: $size;
+	    border-left: $size solid transparent;
+	    border-right: $size solid transparent; 
+	    border-bottom: $size solid $color;  
+	}
+    } 
+}

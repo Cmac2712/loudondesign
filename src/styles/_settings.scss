@@ -1,0 +1,74 @@
+/*-----------------------------*\
+
+SETTINGS
+
+\*-----------------------------*/
+
+// Typography
+@import 'fonts';
+$font-size: 16px;
+$brand-font: niveau_grotesk_regularregular, sans serif;
+
+// Colors
+$ui-color:             #e6e6e6;
+$ui-color--dark:       #1d1d1d;
+$brand-color:          #a70303;
+
+$ui-white: #fff;
+$ui-black: #000;
+
+$font-color:           #303030;
+$font-color--tint:     lighten($font-color, 7.5%);
+$font-color--inverted: #fff;
+$font-color__para:     lighten($font-color, 15%);
+$invert-color:         #eee;
+
+// Spacing
+$spacing-unit:         10px;
+$spacing-unit--double: $spacing-unit*2;
+$spacing-unit--half:   $spacing-unit/2;
+
+// Breakpoints
+$small-end:	    359px;
+$lap-start:         640px;
+$lap-reg-start:     767px;
+$desk-start:        1024px;
+$desk-wide-start:   1152px;
+$desk-super-start:  1536px;
+$desk-hd-start:	    1792px;
+
+$palm-end:              $lap-start - 1;
+$lap-end:               $desk-start - 1;
+$desk-end:               $desk-wide-start - 1;
+$desk-wide-end:         $desk-super-start - 1;
+
+// Mobile sitch point
+$menu-switch: 600px;
+$menu-switch-end: $menu-switch - 1;
+
+// Wrap width
+$wrap-width: 1140px + ($spacing-unit*2);
+
+// Neat grid
+$gutter: 0em;
+
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+// Grid Columns
+$grid-colums: 12;
+
+// Breakpoints
+$mobile: new-breakpoint(max-width $menu-switch 4);
+
+$small-break: new-breakpoint(min-width 0 max-width $small-end 12);
+$menu-switch-break: new-breakpoint(min-width $small-end max-width $menu-switch 12);
+$palm-break: new-breakpoint(min-width $menu-switch-end max-width $palm-end 12);
+$lap-break: new-breakpoint(min-width $lap-start max-width $lap-end 12);
+$lap-up-break: new-breakpoint(min-width $lap-start 12);
+$desk-up-break: new-breakpoint(min-width $desk-start 12);
+
+// Paths 
+$images-url: 'img/';
+
+// Logo color
+$loudondesign: $brand-color;

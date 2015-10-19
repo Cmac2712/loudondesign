@@ -1,0 +1,146 @@
+/**
+ * MAIN NAVIGATION
+ */
+
+.main-nav {
+    border-top: 1px solid #292929;
+    display: none;
+
+    @media screen and (min-width: $menu-switch) {
+	display: block;
+    }
+}
+
+.main-nav.open { display: block; }
+
+    .main-nav ul {
+	text-align: left;	
+	padding: $spacing-unit 0;
+	white-space: nowrap;
+
+	@media screen and (min-width: $menu-switch) {
+	    text-align: center;	
+	    padding: 0;
+	}
+    }
+
+	.main-nav li {
+	    position: relative;
+	    margin-bottom: 0;
+	    font-size: $font-size;
+	    display: block;
+
+	    @media screen and (min-width: $menu-switch) {
+		display: inline-block;	
+		font-size: $font-size*.75;
+	    }
+
+	    @media screen and (min-width: $desk-start) {
+		font-size: $font-size;
+	    }
+	}
+
+	.main-nav a {
+	    display: block;
+	    padding: $spacing-unit $spacing-unit--double;
+	    text-transform: uppercase;
+	    color: rgb(255, 255, 255);
+
+	    @media screen and (min-width: $menu-switch) {
+		padding: $spacing-unit--double $spacing-unit;
+	    }
+
+	    @media screen and (min-width: $desk-start) {
+		padding: $spacing-unit--double;
+	    }
+	}
+
+	.main-nav .active {
+	    position: relative; 
+	}
+
+	.main-nav > ul > li > a:after,
+	.main-nav .active a:after {
+	    content: "";
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    border-left: 5px solid $brand-color;
+
+	    @media screen and (min-width: $menu-switch) {
+		height: 5px;
+		top: auto;
+		left: 0; 
+		right: 0;
+		border-bottom: 5px solid $brand-color;
+	    }
+	    
+	    @media screen and (min-width: $desk-start) {
+	        left: $spacing-unit--double;
+	        right: $spacing-unit--double;
+	    }
+	}
+
+	li.main-nav__active a:after { @include transform(translate3d(0, 0, 0)); }
+
+	.main-nav a:after {
+	    @include transform(translate3d(-5px, 0, 0));
+	    @include transition(transform .5s);
+
+	    @media screen and (min-width: $menu-switch) { @include transform(translate3d(0, 5px, 0)); }
+	}
+
+	.main-nav li:hover a:after {
+	    @include transform(translate3d(0, 0, 0));
+	    @include transition(transform .5s);
+	}
+
+/**
+ * SUB MENU
+ * TIER ONE 
+ */
+
+.main-nav .sub-menu.active { display: block; }
+.main-nav li.menu-item-has-children:hover > .sub-menu { 
+    @media screen and (min-width: $menu-switch) {
+	display: block;
+    }
+}
+
+.main-nav .sub-menu {
+    position: static;
+    display: none; // temp 
+    z-index: 9;
+    background-color: #1d1d1d;
+    padding: $spacing-unit 0;
+
+    @media screen and (min-width: $menu-switch) {
+	position: absolute;
+	border-top: 3px solid $brand-color;
+    }
+}
+
+    .sub-menu li {
+	display: block;
+	position: static;
+    }
+
+	.sub-menu li a {
+	    padding: $spacing-unit--half $spacing-unit--double; 	
+	    text-align: left;
+	    text-transform: uppercase;
+	}
+
+	.sub-menu li a.active,
+	.sub-menu li:hover:after { border-left: 5px solid $brand-color; }
+
+/**
+ * SUB MENU
+ * TIER TWO 
+ */
+
+.sub-menu .sub-menu {
+    top: -3px; // top: 0 - 3px border
+    left: 100%;	
+}

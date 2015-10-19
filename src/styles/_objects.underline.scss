@@ -1,0 +1,31 @@
+/*-----------------------------*\
+
+UNDERLINE 
+
+\*-----------------------------*/
+
+/**
+ * Adds faux-underline to text
+ */
+
+.underline {
+    line-height: 2rem;
+    padding-bottom: $spacing-unit/3;
+    border-bottom: 2px #aec6d2 solid;
+}
+
+    .underline--short {
+	position: relative;	
+
+	&:after {
+	    content: "";
+	    position: absolute;
+	    bottom: -$spacing-unit;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+	    height: 2px;
+	    width: 45%;
+	    background-color: #fff;
+	}
+    }

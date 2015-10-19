@@ -1,0 +1,20 @@
+/**
+ *  GET STARTED
+ */
+
+.get-started {
+    position: relative;
+    background-color: $ui-color;
+    text-align: center;	
+    padding: $spacing-unit * 7 0;
+    margin-bottom: 0;
+}
+
+    .get-started__text {
+	margin: 0 auto;
+	margin-bottom: $spacing-unit * 4;
+	font-size: $font-size * 1.5;
+	line-height: $font-size * 2.5;
+	max-width: 600px;
+	color: lighten($font-color, 20%);
+    }

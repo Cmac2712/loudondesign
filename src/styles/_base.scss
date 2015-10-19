@@ -1,0 +1,98 @@
+/*-----------------------------*\
+  
+BASE
+
+\*-----------------------------*/
+
+
+body {
+    font-family: $brand-font;
+    font-size: $font-size;
+    line-height: $font-size * 1.5; 
+    color: $font-color;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: $spacing-unit * 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 $spacing-unit * 2 0;
+    font-weight: normal;
+}
+
+h1, .alpha {
+    font-size: 1.5em;
+    line-height: .83em;
+}
+
+h2, .beta {
+    font-size: 1.375em;
+    line-height: .91em;
+}
+
+h3, .gamma {
+    font-size: 1.25em;
+    line-height: 1em;
+}
+
+h4, .delta {
+    font-size: 1.125em;
+    line-height: .9em;
+}
+
+h5, h6 ,.epsilon {
+    font-size: 1em;
+    line-height: .8em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: $spacing-unit/2;
+}
+
+a:link {
+    color: $brand-color;
+    text-decoration: none;
+    -webkit-transition: color, .25s;
+    transition: color, .25s;
+}
+
+section {
+    padding-top: $spacing-unit * 6;
+    margin-bottom: $spacing-unit * 6;
+}
+
+a:hover,
+a:visited,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: $brand-color;
+    -webkit-transition: color, .25s;
+    transition: color, .25s;
+}
+
+form {
+    position: relative;
+}
+
+input {
+    padding: $spacing-unit;    	
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+}
+
+
+.em { font-style: italic; }

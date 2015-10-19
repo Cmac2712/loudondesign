@@ -1,0 +1,82 @@
+/**
+ * MAIN HEADER 
+ */
+
+/**
+ * MOBILE LINKS 
+ */
+
+.phone--mobile,
+.main-nav-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: $menu-switch) { 
+	display: none;
+    }
+}
+
+a.phone--mobile {
+    display: block;
+    right: 0; 
+    height: 60px;   
+    border-left: 1px solid #292929;
+    text-align: center;
+
+    @media screen and (min-width: $menu-switch) {
+	display: none;
+    }
+}
+
+    a.phone--mobile span {
+	@include vertical-align;
+	top: 45%;
+    }
+
+    a.phone--mobile span:before {
+	font-size: $font-size*1.25;
+    }
+
+/**
+ * NAV OPEN/CLOSE 
+ */
+
+.main-nav-button {
+    height: 60px;
+    left: 0;
+    border-right: 1px solid #292929;
+}
+
+    .main-nav-button.active {
+	background-color: $brand-color;
+    }
+
+
+/**
+ * ANIMATED HAMBURGER ICON
+ */
+
+.hamburger {
+    display: inline-block;
+    width: $spacing-unit--double;
+    height: $spacing-unit--double;
+    z-index: 9999;
+    @include transition(all 0.25s ease);
+    @include vertical-align; 
+}
+
+    .hamburger__slice {
+	margin-bottom: 5px;
+	height: 2px;
+	background: #fff;
+	@include transition(all 0.25s ease);
+    }
+
+	.active .hamburger__slice--top { @include transform(translate3d(0,7px, 0) rotate(45deg)); }
+	.active .hamburger__slice--mid { opacity: 0; }
+	.active .hamburger__slice--btm { @include transform(translate3d(0,-7px, 0) rotate(-45deg)); }
+

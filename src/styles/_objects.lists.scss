@@ -1,0 +1,32 @@
+/**
+ * LISTS
+ */
+
+.clean {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.inline-list { text-align: center;  }
+
+    .inline-list li { display: inline-block; }
+
+.brand-list {
+    list-style-type: none;	
+}
+
+.brand-list li:before {
+    content: "\2022 ";
+    color: $brand-color;
+    padding-right: $spacing-unit;
+    font-size: $font-size * 1.5;
+    position: relative;
+    bottom: -2px;
+}
+
+ol.brand-ordered-list li {
+}
+
+ol.brand-ordered-list li:after {
+    
+}

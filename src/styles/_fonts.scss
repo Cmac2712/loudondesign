@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'niveau_grotesklight';
+    src: url('fonts/hvd_fonts_-_niveaugrotesklight-webfont.eot');
+    src: url('fonts/hvd_fonts_-_niveaugrotesklight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hvd_fonts_-_niveaugrotesklight-webfont.woff') format('woff'),
+         url('fonts/hvd_fonts_-_niveaugrotesklight-webfont.ttf') format('truetype'),
+         url('fonts/hvd_fonts_-_niveaugrotesklight-webfont.svg#niveau_grotesklight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'niveau_grotesk_regularregular';
+    src: url('fonts/hvd_fonts_-_niveaugroteskregular-webfont.eot');
+    src: url('fonts/hvd_fonts_-_niveaugroteskregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hvd_fonts_-_niveaugroteskregular-webfont.woff') format('woff'),
+         url('fonts/hvd_fonts_-_niveaugroteskregular-webfont.ttf') format('truetype'),
+         url('fonts/hvd_fonts_-_niveaugroteskregular-webfont.svg#niveau_grotesk_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?t9ribs');
+	src:url('fonts/icomoon.eot?#iefixt9ribs') format('embedded-opentype'),
+		url('fonts/icomoon.woff?t9ribs') format('woff'),
+		url('fonts/icomoon.ttf?t9ribs') format('truetype'),
+		url('fonts/icomoon.svg?t9ribs#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Enable Ligatures ================ */
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+	content: "\e604";
+
+}
+.icon-phone:before {
+	content: "\e600";
+
+}
+.icon-twitter3:before {
+	content: "\e605";
+
+}
+.icon-chevron-down:before {
+	content: "\e603";
+
+}
+.icon-pinterest:before {
+	content: "\e602";
+
+}
+.icon-facebook-with-circle:before {
+	content: "\e606";
+
+}
+.icon-envelope:before {
+	content: "\e601";
+
+}

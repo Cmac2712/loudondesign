@@ -1,0 +1,125 @@
+/**
+ * HEADER
+ */
+
+.main-header {
+    color: #fff;
+    background-color: $ui-color--dark;
+}
+
+    .main-header__wrap {
+	height: ($spacing-unit--double) + 40px;
+	padding-top: $spacing-unit;
+	padding-bottom: $spacing-unit;
+
+	@media screen and (min-width: $menu-switch) {
+	    height: ($spacing-unit--double*2) + 55px;
+	    padding-top: $spacing-unit--double;
+	    padding-bottom: $spacing-unit--double;
+	}
+    }
+
+    .main-header__logo {
+	display: block;
+	margin: 0 auto;
+	height: 40px;
+	width: 40px;
+
+	@media screen and (min-width: $menu-switch) {
+	    height: 55px;
+	    width: 55px;
+	}
+    }
+
+    .logo {
+	width: 100%;
+	height: 100%;
+    }
+
+    .logo path { fill: $loudondesign; }
+
+.details {
+    line-height: $font-size;
+    @include vertical-align;
+}
+
+    .details__envelope {
+	margin-right: $spacing-unit--double;
+	//margin-bottom: $spacing-unit--half;
+	text-transform: uppercase;
+	display: none;
+
+	@include media-query(desk) { 
+	    display: inline-block;
+	}
+    }
+
+    .details__phone a {
+	color: #fff;	
+    }
+
+    .details__name,
+    .details__job-title {
+	display: block;	
+	width: 100%;
+    }
+
+    .details__name {
+	font-size: 16px;	
+	text-transform: uppercase;
+    }
+
+    .details__job-title {
+	font-size: 14px;
+    }
+
+.details--left {
+    float: left;
+    display: none;
+
+    @media screen and (min-width: $menu-switch) {
+	display: block;	
+    }
+}
+
+.details--right {
+    float: right;
+    display: none;
+
+    @media screen and (min-width: $menu-switch) {
+	display: block;	
+    }
+}
+
+    .details--right .details__envelope,
+    .details--right .details__phone {
+
+	//display: block;
+	//@include media-query(desk) {
+	//    display: inline-block;
+	//}
+    }
+
+
+.details .icon-envelope,
+.details .icon-phone {
+    vertical-align: middle;
+    color: $brand-color;
+    margin-right: $spacing-unit*1;
+    font-size: $font-size *1.25;
+}
+
+.details .icon-envelope {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.ie11 .details .icon-envelope {
+    top: -1px;
+}
+
+.details .icon-phone {
+    font-size: $font-size;
+    vertical-align: -1px;
+}

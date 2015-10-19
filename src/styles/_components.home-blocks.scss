@@ -1,0 +1,569 @@
+/**
+ * HOME BLOCKS
+ */
+
+.wrap.wrap--home-blocks {
+    position: relative;
+    font-size: 0;
+    @media screen and (min-width: $desk-start)  { position: static; }
+}
+
+.home-blocks { @include outer-container(100%); }
+
+.case-study {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-size: cover;
+}
+
+.block {
+    background-size: cover;
+    font-size: $font-size;
+    min-height: 300px;
+
+    @media screen and (min-width: 900px) { min-height: 525px;  }
+}
+
+/**
+ * FIRST BLOCK
+ */
+
+.block--one {
+    position: relative;
+    z-index: 999;
+    background-color: #fff;
+    margin-top: -$spacing-unit--double*2;
+    @include span-columns(12 of 12);
+
+    @media screen and (min-width: $menu-switch) {
+	@include span-columns(7);
+    }
+
+    @media screen and (min-width: 900px) {
+	@include span-columns(6);
+    }
+}
+
+    .services {
+	position: relative;
+	padding: $spacing-unit--double;
+	z-index: 999;
+
+	@media screen and (min-width: $menu-switch) {
+	    padding: $spacing-unit * 4 $spacing-unit * 2 0 $spacing-unit;
+	    border-right: 1px solid #e3e3e3;
+	}
+
+	@media screen and (min-width: $desk-start) { padding-right: $spacing-unit * 4; }
+    }
+
+	.services__title {
+	    position: relative;
+	    z-index: 999; 
+	}
+
+	.services__desc{
+	    padding-right: $spacing-unit--double; 
+	}
+
+/**
+ * SERVICES ICONS GRID
+ */
+
+.services-grid {
+    @include outer-container(100%);
+    margin-bottom: $spacing-unit--double;
+    font-size: 0;
+}
+
+    .services-grid__major {
+	@include span-columns(12);
+	padding-bottom: $spacing-unit;
+
+	@media screen and (min-width: $desk-start) {
+	    padding-right: $spacing-unit;
+	    @include span-columns(8);
+	}
+    }
+    
+    .services-grid__background { background-image: radial-gradient(circle, #fff, #ddd); }
+
+    .services-grid__major .services-grid__background {
+	 height: 225px; 
+
+	 @media screen and (min-width: $desk-start) {
+	    height: 285px; 
+	 }
+     }
+
+    .services-grid__minors {
+	@include span-columns(12);
+
+	@media screen and (min-width: $desk-start) { @include span-columns(4); }
+    }
+
+	.services-grid__minor {
+	    @include span-columns(6);
+
+	    @media screen and (min-width: $desk-start) {
+		@include span-columns(12);
+	    }
+	}
+
+	.services-grid__minor .services-grid__background { height: (-$spacing-unit--half) + 142.5px; }
+
+	.services-grid__minor:first-child {
+	    padding-right: $spacing-unit--half;
+
+	    @media screen and (min-width: $desk-start) {
+	       padding-right: 0; 
+	       padding-bottom: $spacing-unit--half;
+	    }
+	}
+
+	.services-grid__minor:nth-child(2) {
+	    padding-left: $spacing-unit--half; 
+
+	    @media screen and (min-width: $desk-start) {
+		padding-left: 0;    
+		padding-top: $spacing-unit--half;
+	    }
+	}
+
+/**
+ * SERVICES ICON 
+ */
+
+.service-icon { @include vertical-align; }
+
+   .service-icon svg {
+	width: 125px;
+	height: 79px;
+	display: block;
+	margin: 0 auto;
+
+	@media screen and (min-width: $desk-start) {
+	   width: 175px;
+	   height: 108px;
+	}
+    }
+
+    .service-icon--small svg {
+
+	width: 35px;
+	height: 35px;
+	@media screen and (min-width: $desk-start) {
+	   height: 75px;
+	   width: 75px;
+	}
+    }
+
+    h2.service-icon__label {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: $spacing-unit--double;
+    	font-size: $font-size * 1.75;
+
+	@media screen and (min-width: $menu-switch) {
+	   font-size: $font-size * 1.75;
+	  // padding: 0;
+	}
+    }
+    
+    
+    h2.service-icon__label--small {
+	position: static;
+	padding: $spacing-unit--half;
+	padding-bottom: 0;
+	font-size: $font-size;
+
+	@media screen and (min-width: $menu-switch) {
+	   font-size: $font-size * 1.25;
+	}
+    }
+
+/**
+ * SECOND BLOCK
+ */
+
+.block--two {
+    @include outer-container(100%);
+    @include span-columns(12, block-collapse);
+
+    @media screen and (min-width: $menu-switch) { @include span-columns(5, block-collapse); }
+
+    @media screen and (min-width: 900px) { @include span-columns(6, block-collapse); }
+}
+
+/**
+ * BLOG
+ */
+
+.blog-image {
+    position: relative;
+    @include span-columns(12);
+    min-height: 175px;
+    z-index: 999;
+
+    @media screen and (min-width: 900px) {
+	min-height: 525px;
+	margin-top: -$spacing-unit--double*2;
+	@include span-columns(6);
+    }
+}
+
+    .blog-image__inner {
+	background-image: url($images-url + 'sketch.png');
+	background-size: cover;
+    }
+
+.blog-snippet {
+    position: relative;
+    min-height: 0;
+    @include span-columns(12, block-collapse);
+    @include arrow(top, ($spacing-unit * 1.5), #fff);
+    padding: $spacing-unit--double; 
+    padding-top: $spacing-unit--double * 1.5;
+
+    @media screen and (min-width: $menu-switch) {
+	padding: $spacing-unit--double; 
+	padding-top: $spacing-unit--double * 2;
+    }
+
+    @media screen and (min-width: 900px) {
+	@include span-columns(6, block-collapse);
+	@include arrow(left, ($spacing-unit * 1.5), #fff);
+    }
+}
+
+    .blog-snippet__title { margin-bottom: $spacing-unit--half; }
+
+    a.blog-snippet__link { color: $font-color; }
+
+// Arrow
+.blog-snippet:after {
+	position: absolute;
+	z-index: 999;
+	top: (-$spacing-unit * 1.5);  
+	right: $spacing-unit * 1.5;
+	margin: 0 auto;
+
+	@media screen and (min-width: 900px) {
+	    top: $spacing-unit*5; 
+	    margin: 0;
+	}
+}
+
+/**
+ * THIRD BLOCK
+ */
+
+.block--three {
+    background-color: #fff;
+    @include span-columns(12);
+
+    @media screen and (min-width: $menu-switch) {
+	@include span-columns(7);
+    }
+
+    @media screen and (min-width: 900px) {
+	@include span-columns(6);
+    }
+}
+
+
+    .block--three__sub-block {
+	position: relative;
+	@include span-columns(12, block-collapse);
+
+	@media screen and (min-width: $desk-start) { position: static;  }
+    }
+
+.houlden {
+    position: relative;
+    margin-bottom: $spacing-unit;
+    min-height: 300px;
+    z-index: 999;
+
+    @media screen and (min-width: 900px) {
+	min-height: 549px;
+	margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $desk-start) {
+	min-height: 589px;
+	position: absolute;
+	left: 0;
+	right: 50%;
+	margin-bottom: 0;
+    }
+
+}
+
+    .houlden__image {
+	background-image: url($images-url + 'houlden.png');	
+	background-size: cover;
+	background-position: 33% 0;
+    }
+
+    .block-desc--houlden {
+	position: absolute;
+	z-index: 999;
+	bottom: $spacing-unit * 2;
+	left: $spacing-unit * 2;
+	color: #fff;
+
+	@media screen and (min-width: $desk-start) {
+	    position: relative;
+	    top: $spacing-unit * 50;
+	    left: $spacing-unit--double;
+	}
+    }
+
+/**
+ * FOURTH BLOCK
+ */
+
+.block--four {
+    position: relative;
+    @include span-columns(12, block-collapse);
+    z-index: 9999;
+    font-size: 0;
+
+    @media screen and (min-width: $menu-switch) {
+	@include span-columns(5, block-collapse);
+	margin-top: -150px;
+    }
+
+    @media screen and (min-width: 900px) {
+	padding: 0;
+	@include span-columns(6, block-collapse);
+	margin-top: -304px;
+    }
+
+
+    @media screen and (min-width: $desk-start) {
+	margin-top: -300px + ($spacing-unit * 10);
+    }
+}
+
+
+    .block--four__sub-block--one {
+	position: relative;
+	min-height: 300px;
+
+	@media screen and (min-width: $menu-switch) {
+	    min-height: 450px;
+	}
+
+	@media screen and (min-width: 900px) { min-height: 550px;  }
+
+	@media screen and (min-width: $desk-start) { min-height: 486px;  }
+    }
+
+	.trespass {
+	    background-image: url($images-url + 'trespass.png');	
+	    background-size: cover;
+	    background-position: 50% 0;
+	}
+
+    .block--four__sub-block--two {
+	position: relative;
+	min-height: 0;  
+
+	@media screen and (min-width: 900px) { min-height: 303px;  }
+    }
+
+	.testimonial {
+	    color: #fff;	
+	    background-color: #1b1b1b;
+	    background-image: url($images-url + 'logo--dark.svg'), 
+			      radial-gradient(circle 700px at 50%, rgba(255, 255, 255, .2), transparent);	
+	    background-repeat: no-repeat;
+	    background-position: 50% 25%;
+	    padding: $spacing-unit--double;
+	    margin: $spacing-unit 0;
+	    text-align: center;
+	    font-size: $font-size;	
+
+	    @media screen and (min-width: $menu-switch) {
+		position: absolute;
+		top: 0;
+		left: -140%;
+		margin: 0;
+	    }
+	    
+	    @media screen and (min-width: $menu-switch) and (max-width: 900px) {
+		position: static;
+		margin-left: -140%;
+	    }
+
+	    @media screen and (min-width: 900px) { 
+		min-height: 303px;
+		height: 303px;
+		left: 0;
+		background-position: 200% 25%;
+		background-image: url($images-url + 'logo--dark.svg'),
+			 	  radial-gradient(circle 700px at 75%, rgba(255, 255, 255, .2), transparent);	
+	    }
+
+	    @media screen and (min-width: $desk-start) {
+		height: 279px;
+	    }
+}
+
+	    .firefox .testimonial {
+		@media screen and (min-width: $desk-start) {
+		    height: 280px;
+		    top: -1px;
+		}
+
+		@media screen and (min-width: 900px) {
+		    min-height: 304px;
+		}
+	    }
+
+	    .testimonial__text {
+		//max-height: 130px;
+	    }
+
+	    .testimonial__title {
+		margin-bottom: $spacing-unit * 3;
+	    }
+
+	    .testimonial__title .underline--short:after { background-color: #666; }
+
+/**
+ * FIFTH BLOCK
+ */
+
+.health-check {
+
+    padding: $spacing-unit * 2;
+
+    @media screen and (min-width: $menu-switch) {
+        @include fill-parent();
+        @include row(table);
+	//margin-top: 105px;
+	padding: $spacing-unit * 3;
+    }
+    
+    @media screen and (min-width: $menu-switch) {
+	padding: $spacing-unit * 3 $spacing-unit * 3 $spacing-unit * 5 $spacing-unit * 3;
+    }
+
+    @media screen and (min-width: 900px) {
+	min-height: 525px;
+	margin-top: 0;
+    }
+    
+    @media screen and (min-width: $desk-start) {
+	padding: $spacing-unit * 6;
+    }
+}
+
+.health-check__link { margin-top: $spacing-unit * 3; }
+
+.or-learn-more {
+    display: block;
+    margin-top: $spacing-unit * 3;
+    
+    @media screen and (min-width: 850px) {
+	display: inline-block;
+	margin-top: 0;
+    }
+}
+
+.health-check__link .button { margin-right: $spacing-unit; }
+
+.health-check__link a { color: $font-color; }
+
+.home-blocks--bottom {
+    position: relative;
+
+    @media screen and (min-width: $menu-switch) and (max-width: 900px) {
+	//height: 600px;
+	//padding-bottom: 66%;
+    }
+}
+
+.block--five,
+.block--seven {
+    position: relative;
+    min-height: 300px;
+
+    @media screen and (min-width: $menu-switch) and (max-width: 900px) {
+	position: absolute;
+	top: 0;
+	bottom: 50%;
+	right: 0;
+	min-height: 0;
+	width: 35%;
+    }
+
+    @media screen and (min-width: 900px) {
+	position: relative;
+	@include span-columns(3);	
+
+    }
+
+}
+
+.case-study--five { background-image: url($images-url + 'skypark.png'); }
+
+.case-study--six { background-image: url($images-url + 'simon-howie.png');  }
+
+.block--six {
+    @include span-columns(12);	
+    background-color: #fff;
+
+    @media screen and (min-width: $menu-switch) and (max-width: 899px) {
+	//position: absolute;
+	padding-right: 40%;
+	left: 0;
+	width: 65%;
+	top: 0;
+	bottom: 0;
+    }
+
+    @media screen and (min-width: 900px) {
+	//padding: $spacing-unit * 6;
+	@include span-columns(6);	
+    }
+}
+
+.block--seven {
+    background-image: url($images-url + 'simon-howie.png');
+    @media screen and (min-width: $menu-switch) and (max-width: 900px) {
+	top: 50%;
+	bottom: 0;
+    }
+}
+
+.health-check__title { margin-bottom: $spacing-unit--double; }
+
+.ie11 .block--five { background-image: url($images-url + 'skypark.png'); }
+
+.ie11 .block--seven { background-image: url($images-url + 'simon-howie.png'); }
+
+.get-started--home {
+    padding-top: $spacing-unit * 25;
+    margin-top: -$spacing-unit * 20;
+    margin-bottom: 0;
+}
+
+.get-started--home:after {
+    content: "";
+    position: absolute;
+    top: -350px;	
+    left: 0;
+    background-color: $ui-color;
+    width: 50%;
+    height: 500px;
+}
+
+

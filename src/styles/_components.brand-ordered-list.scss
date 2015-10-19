@@ -1,0 +1,44 @@
+/**
+ *  BRAND ORDERED LIST
+ */
+
+.brand-ordered-list h2 {
+    position: relative;
+    padding-left: $spacing-unit * 4;
+}
+
+.brand-ordered-list h2:before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background-color: $brand-color;
+    height: $font-size * 1.5;
+    width: $font-size * 1.5;
+    border-radius: 50%;
+}
+
+
+.brand-ordered-list h2:after {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 8px;
+    color: #fff;
+    font-size: $font-size * .9;
+}
+
+.brand-ordered-list li:nth-child(1) h2:after { content: "1"; }
+.brand-ordered-list li:nth-child(2) h2:after { content: "2"; }
+.brand-ordered-list li:nth-child(3) h2:after { content: "3"; }
+.brand-ordered-list li:nth-child(4) h2:after { content: "4"; }
+.brand-ordered-list li:nth-child(5) h2:after { content: "5"; }
+.brand-ordered-list li:nth-child(6) h2:after { content: "6"; }
+.brand-ordered-list li:nth-child(7) h2:after { content: "7"; }
+.brand-ordered-list li:nth-child(8) h2:after { content: "8"; }
+.brand-ordered-list li:nth-child(9) h2:after { content: "9"; }
+
+
+.brand-ordered-list li:nth-child(1) h2:after { left: 9px; }
+.brand-ordered-list li:nth-child(3) h2:after { left: 9px; }
+.brand-ordered-list li:nth-child(7) h2:after { left: 9px; }

@@ -1,0 +1,31 @@
+/**
+ * BUTTONS
+ */
+
+.button {
+    padding: $spacing-unit $spacing-unit * 1.5;
+    font-size: $font-size * 1.2;
+}
+
+.button--branded {
+    background-color: $brand-color;
+    color: #fff;
+
+    &:visited,
+    &:focus,
+    &:link,
+    &:active { color: #fff; }
+
+    &:hover {
+	background-color: lighten($brand-color, 5%);
+	@include transition(background-color, 5%);
+    }
+    
+}
+
+.button--raquo {
+    color: $brand-color;	
+    background: none;
+    border: 0;
+    font-size: $font-size*1.75;
+}

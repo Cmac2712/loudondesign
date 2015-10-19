@@ -1,0 +1,14 @@
+/**
+ * TEXT
+ */
+
+.lead { font-size: $font-size * 1.1; }
+
+.highlight,
+a.highlight {
+    color: $brand-color;
+}
+
+.text-shadow--top { box-shadow: inset 0px -130px 50px -39px rgba(0, 0, 0, .3); }
+
+.text-shadow--bottom { box-shadow: inset 0px -130px 50px -39px rgba(0, 0, 0, .3); }

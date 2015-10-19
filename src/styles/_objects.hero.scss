@@ -1,0 +1,15 @@
+/**
+ * HERO BANNER
+ */
+
+.hero {
+   min-height: 375px; 
+
+   @include media($desk-up-break) {
+	min-height: 475px; 
+   }
+}
+
+    .hero-text ul {
+	margin-bottom: $spacing-unit--double;	
+    }

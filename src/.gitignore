@@ -1,0 +1,4 @@
+*.sass-cache/
+.*.sw*
+*scss.map
+*rsync_excludes.txt

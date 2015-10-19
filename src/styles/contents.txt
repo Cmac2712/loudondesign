@@ -1,0 +1,39 @@
+ * 
+ *
+ * SETTINGS
+ * Typography.....................................Fonts and font stacks
+ * Colors.........................................Set our brand color and UI colors
+ * Spacing........................................Base spacing units for nice even spacing
+ *
+ * TOOLS
+ * Mixins.........................................Usefull mixins
+ * Bourbon........................................Library of Mixins and functions (bourbon.io)
+ * Neat...........................................Grid system base on mixins for more semantic HTML (neat.bourbon.io)
+ 
+ * GENERIC
+ * Box Sizing.....................................Set box-sizing: border-box;
+ * Breakpoints....................................Media Queries for different screen sizes (technically should be in settings but we need to include it after Neat)
+ * Browse Happy...................................Styling for Browse Happy for unsupported browsers
+ *
+ * BASE
+ * body...........................................Set up our root styles
+ * h1-h6..........................................Headers
+ * ul.............................................Lists
+ * a..............................................Links
+ *
+ * OBJECTS
+ *
+ * COMPONENTS
+ *
+ * TRUMPS
+ * Vertical Centering.............................Ghost element inline-block vertical-align: middle for aligning elements
+ * Positioning....................................Absolute/relative positionsa
+ * Floats.........................................Add/remove floats
+ * Text Alignments................................Align text left/right/center
+ * Font Weights...................................Change font weights
+ * Margins/Padding................................Add/Remove margins and padding
+ * Visuall Hidde..................................Hide elements
+ * .brandColor....................................Last class in the stylesheet so it can easily be found with javascript
+ *
+ *
+ */

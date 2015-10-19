@@ -1,0 +1,53 @@
+/**
+ * craigmacintyre.co.uk
+ * @author Craig MacIntyre
+ * @email cmac2712@gmail.com
+ */
+//$visual-grid: true;
+$gutter: 4em;
+
+@import 'tools';
+@import 'bower_components/inuit-functions/tools.functions';
+
+@import 'settings';
+@import 'bower_components/inuit-defaults/settings.defaults';
+
+@import 'generic';
+
+@import 'base';
+
+@import 'objects.buttons';
+@import 'objects.hero';
+@import 'objects.hovers';
+@import 'objects.icons';
+@import 'objects.layers';
+@import 'objects.lists';
+@import 'objects.text';
+@import 'objects.underline';
+@import 'objects.wraps';
+
+$inuit-enable-media--tiny:       true;
+$inuit-enable-media--small:      true;
+$inuit-enable-media--large:      true;
+$inuit-enable-media--huge:       true;
+$inuit-enable-media--rev:        true;
+$inuit-enable-media--flush:      true;
+$inuit-enable-media--responsive: true;
+@import 'bower_components/inuit-media/_objects.media.scss';
+@import 'components.contact';
+@import 'components.clock';
+@import 'components.header';
+@import 'components.get-started';
+@import 'components.home-hero';
+@import 'components.profile';
+@import 'components.service-hero';
+@import 'components.outro';
+@import 'components.process-list';
+@import 'components.brand-ordered-list';
+@import 'components.home-blocks';
+@import 'components.main-header';
+@import 'components.main-nav';
+@import 'components.footer';
+
+@import 'helpers';
+@import 'bower_components/inuit-clearfix/trumps.clearfix';
