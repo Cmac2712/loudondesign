@@ -6,14 +6,9 @@
     margin-top: -$spacing-unit * 3;
     margin-bottom: $spacing-unit * 3;
     padding-top: 0;
-    @include outer-container(100%);
 }
   
-    .outro__img {
-	@include span-columns(4);
-    }
+    .outro__img { padding: 0 $spacing-unit * 9; }
 
-    .outro__body {
-	padding: $spacing-unit * 3 0;
-    }
+    .outro__body { padding: $spacing-unit * 3 0; }
 

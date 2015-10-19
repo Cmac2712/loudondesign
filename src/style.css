@@ -980,22 +980,10 @@ WRAPS
 .outro {
   margin-top: -30px;
   margin-bottom: 30px;
-  padding-top: 0;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  .outro::after {
-    clear: both;
-    content: "";
-    display: table; }
+  padding-top: 0; }
 
 .outro__img {
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 33.33333%; }
-  .outro__img:last-child {
-    margin-right: 0; }
+  padding: 0 90px; }
 
 .outro__body {
   padding: 30px 0; }
@@ -1075,6 +1063,8 @@ WRAPS
   background-color: #a70303;
   height: 24px;
   width: 24px;
+  background-image: url("img/brand-numbers.png");
+  background-size: 60px;
   border-radius: 50%; }
 
 .brand-ordered-list h2:after {
@@ -1083,43 +1073,34 @@ WRAPS
   top: 0;
   left: 8px;
   color: #fff;
-  font-size: 14.4px; }
+  background-color: #f5f; }
 
-.brand-ordered-list li:nth-child(1) h2:after {
-  content: "1"; }
+.brand-ordered-list li:nth-child(1) h2:before {
+  background-position: -2px 2px; }
 
-.brand-ordered-list li:nth-child(2) h2:after {
-  content: "2"; }
+.brand-ordered-list li:nth-child(2) h2:before {
+  background-position: -19px 2px; }
 
-.brand-ordered-list li:nth-child(3) h2:after {
-  content: "3"; }
+.brand-ordered-list li:nth-child(3) h2:before {
+  background-position: -37px 2px; }
 
-.brand-ordered-list li:nth-child(4) h2:after {
-  content: "4"; }
+.brand-ordered-list li:nth-child(4) h2:before {
+  background-position: -4px -17px; }
 
-.brand-ordered-list li:nth-child(5) h2:after {
-  content: "5"; }
+.brand-ordered-list li:nth-child(5) h2:before {
+  background-position: -19px -17px; }
 
-.brand-ordered-list li:nth-child(6) h2:after {
-  content: "6"; }
+.brand-ordered-list li:nth-child(6) h2:before {
+  background-position: -34px -17px; }
 
-.brand-ordered-list li:nth-child(7) h2:after {
-  content: "7"; }
+.brand-ordered-list li:nth-child(7) h2:before {
+  background-position: -3px -35px; }
 
-.brand-ordered-list li:nth-child(8) h2:after {
-  content: "8"; }
+.brand-ordered-list li:nth-child(8) h2:before {
+  background-position: -18px -36px; }
 
-.brand-ordered-list li:nth-child(9) h2:after {
-  content: "9"; }
-
-.brand-ordered-list li:nth-child(1) h2:after {
-  left: 9px; }
-
-.brand-ordered-list li:nth-child(3) h2:after {
-  left: 9px; }
-
-.brand-ordered-list li:nth-child(7) h2:after {
-  left: 9px; }
+.brand-ordered-list li:nth-child(9) h2:before {
+  background-position: -34px -35px; }
 
 /**
  * HOME BLOCKS
