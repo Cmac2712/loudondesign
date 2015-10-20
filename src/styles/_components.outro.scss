@@ -3,12 +3,27 @@
  */
 
 .outro {
-    margin-top: -$spacing-unit * 3;
-    margin-bottom: $spacing-unit * 3;
+    margin: 0 $spacing-unit;
     padding-top: 0;
+    
+    @media screen and (min-width: $lap-reg-start) { margin: -$spacing-unit * 3 $spacing-unit $spacing-unit * 3 $spacing-unit; }
 }
   
-    .outro__img { padding: 0 $spacing-unit * 9; }
+    .outro .outro__img { 
+	margin-bottom: 0;
 
-    .outro__body { padding: $spacing-unit * 3 0; }
+	@media screen and (min-width: $lap-reg-start) { padding: 0 $spacing-unit * 2 0 $spacing-unit * 4; }
 
+	@media screen and (min-width: $desk-start) { padding: 0 $spacing-unit * 9; }
+    }
+
+	.outro__img img {
+	    max-width: 300px;
+	    margin: 0 auto;
+	}
+
+    .outro__body { 
+	padding: $spacing-unit * 6 0; 
+
+	@media screen and (min-width: $lap-reg-start) { padding: $spacing-unit * 3 0; }
+    }

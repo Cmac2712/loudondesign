@@ -1,48 +1,45 @@
+/**
+ * SERVICE HERO 
+ * Service hero section for service pages
+ */
+
 .service-hero {
     position: relative;
-    padding: 0 $spacing-unit--double;
-    padding-top: $spacing-unit * 6;
+    padding: $spacing-unit * 6 $spacing-unit * 2 0 $spacing-unit * 2;
     margin-bottom: $spacing-unit * 6;
     background-color: #fff;
 }
-    
-    .service-hero *:last-child {
-    	margin-bottom: 0;
-	padding: 0;
-    }
 
-.service-hero .wrap {
-    @include outer-container;
-}
+    .service-hero .wrap { @include outer-container; }
 
+	.service-hero__text {
+	    @include span-columns(12);	
+	    padding: 0;
+	    //text-align: justify;
 
-.service-hero__text {
-    @include span-columns(12);	
-    padding: 0 $spacing-unit--double;
-    padding-top: 275px;
+	    @include media($lap-reg-start) {
+		@include span-columns(8);	
+		padding: 0 $spacing-unit * 3 0 0;
+	    }
+	}
 
-    @include media($desk-up-break) {
-	@include span-columns(8);	
-	padding-top: 0;
-    }
-}
+	    .service-hero__text *:last-child {
+		margin-bottom: 0;
+		padding: 0;
+	    }
 
-    .service-hero__text p {
-	max-width: 670px;
-	text-align: justify;
-    }
+	.service-hero__image {
+	    @include span-columns(12);	
+	    margin-bottom: $spacing-unit * 6;
 
-.service-hero__image {
-    text-align: center;
-    @include span-columns(12);	
-    position: absolute;
-    padding-top: $spacing-unit;
+	    @include media($lap-reg-start) {
+		@include span-columns(4);	
+		padding: $spacing-unit * 3 0;
+		float: right;
+	    }
+	}
 
-    @include media($desk-up-break) {
-	position: static;
-	text-align: right;
-	@include span-columns(4);	
-    }
-}
-
-    .service-hero__image { max-width: 285px; }
+	    .service-hero__image img { 
+		max-width: 285px; 
+		margin: 0 auto;
+	    }

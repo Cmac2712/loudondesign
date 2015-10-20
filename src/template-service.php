@@ -16,11 +16,11 @@ $outro_body     = get_field('outro_body');
 
 <section class="hero service-hero">
     <div class="wrap">
-	<div class="hero-text service-hero__text">
-	    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 1 ); } ?>
-	</div>
 	<div class="service-hero__image">
 	    <?php echo $featured_image; ?> 
+	</div>	
+	<div class="hero-text service-hero__text">
+	    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 1 ); } ?>
 	</div>
     </div>
 </section>
@@ -44,7 +44,7 @@ $outro_body     = get_field('outro_body');
 
 <section class="outro">
     <div class="wrap">
-	<div class="media media--outro">
+	<div class="media media--responsive media--outro">
 	    <div class="media__img outro__img">
 		<img src="<?php echo $outro_image['sizes']['large']; ?>" alt="">
 	    </div>

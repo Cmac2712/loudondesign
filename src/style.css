@@ -363,7 +363,7 @@ WRAPS
 
 .media__img {
   float: left;
-  margin-right: 24px; }
+  margin-right: 20px; }
   .media__img > img {
     display: block; }
 
@@ -373,73 +373,6 @@ WRAPS
   .media__body,
   .media__body > :last-child {
     margin-bottom: 0; }
-
-/**
-     * Tiny media objects.
-     */
-.media--tiny {
-  /**
-             * Tiny reversed media objects.
-             */ }
-  .media--tiny > .media__img {
-    margin-right: 6px; }
-  .media--tiny.media--rev > .media__img {
-    margin-right: 0;
-    margin-left: 6px; }
-
-/**
-     * Small media objects.
-     */
-.media--small {
-  /**
-             * Small reversed media objects.
-             */ }
-  .media--small > .media__img {
-    margin-right: 12px; }
-  .media--small.media--rev > .media__img {
-    margin-right: 0;
-    margin-left: 12px; }
-
-/**
-     * Large media objects.
-     */
-.media--large {
-  /**
-             * Large reversed media objects.
-             */ }
-  .media--large > .media__img {
-    margin-right: 48px; }
-  .media--large.media--rev > .media__img {
-    margin-right: 0;
-    margin-left: 48px; }
-
-/**
-     * Huge media objects.
-     */
-.media--huge {
-  /**
-             * Huge reversed media objects.
-             */ }
-  .media--huge > .media__img {
-    margin-right: 96px; }
-  .media--huge.media--rev > .media__img {
-    margin-right: 0;
-    margin-left: 96px; }
-
-/**
-     * Reversed image location (right instead of left). Extends `.media`.
-     */
-.media--rev > .media__img {
-  float: right;
-  margin-right: 0;
-  margin-left: 24px; }
-
-/**
-     * Flush media objects have no space between the image- and text-content.
-     */
-.media--flush > .media__img {
-  margin-right: 0;
-  margin-left: 0; }
 
 /**
      * Responsive media objects.
@@ -453,60 +386,16 @@ WRAPS
      * b) the media object’s default state is image-next-to-text, so its stacked
      *    state is the exception, rather than the rule.
      */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
   .media--responsive {
     /**
              * Rework the spacings on regular media objects.
-             */
-    /**
-                 * Tiny responsive media objects.
-                 *
-                 * Take a little more heavy-handed approach to reworking
-                 * spacings on media objects that are also tiny media objects
-                 * in their regular state.
-                 */
-    /**
-                 * Small responsive media objects.
-                 *
-                 * Take a little more heavy-handed approach to reworking
-                 * spacings on media objects that are also small media objects
-                 * in their regular state.
-                 */
-    /**
-                 * Large responsive media objects.
-                 *
-                 * Take a little more heavy-handed approach to reworking
-                 * spacings on media objects that are also large media objects
-                 * in their regular state.
-                 */
-    /**
-                 * Huge responsive media objects.
-                 *
-                 * Take a little more heavy-handed approach to reworking
-                 * spacings on media objects that are also huge media objects
-                 * in their regular state.
-                 */ }
+             */ }
     .media--responsive > .media__img {
       float: none;
       margin-right: 0;
-      margin-bottom: 24px;
-      margin-left: 0; }
-    .media--responsive.media--tiny > .media__img {
-      margin-right: 0;
-      margin-left: 0;
-      margin-bottom: 6px; }
-    .media--responsive.media--small > .media__img {
-      margin-right: 0;
-      margin-left: 0;
-      margin-bottom: 12px; }
-    .media--responsive.media--large > .media__img {
-      margin-right: 0;
-      margin-left: 0;
-      margin-bottom: 48px; }
-    .media--responsive.media--huge > .media__img {
-      margin-right: 0;
-      margin-left: 0;
-      margin-bottom: 96px; } }
+      margin-bottom: 20px;
+      margin-left: 0; } }
 
 .contact--outer {
   background-color: #1d1d1d;
@@ -907,16 +796,15 @@ WRAPS
 .profile__info__title {
   margin-bottom: 0; }
 
+/**
+ * SERVICE HERO 
+ * Service hero section for service pages
+ */
 .service-hero {
   position: relative;
-  padding: 0 20px;
-  padding-top: 60px;
+  padding: 60px 20px 0 20px;
   margin-bottom: 60px;
   background-color: #fff; }
-
-.service-hero *:last-child {
-  margin-bottom: 0;
-  padding: 0; }
 
 .service-hero .wrap {
   max-width: 68em;
@@ -932,64 +820,84 @@ WRAPS
   display: block;
   margin-right: 0%;
   width: 100%;
-  padding: 0 20px;
-  padding-top: 275px; }
+  padding: 0; }
   .service-hero__text:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 767px) {
     .service-hero__text {
       float: left;
       display: block;
       margin-right: 0%;
       width: 66.66667%;
-      padding-top: 0; }
+      padding: 0 30px 0 0; }
       .service-hero__text:last-child {
         margin-right: 0; } }
 
-.service-hero__text p {
-  max-width: 670px;
-  text-align: justify; }
+.service-hero__text *:last-child {
+  margin-bottom: 0;
+  padding: 0; }
 
 .service-hero__image {
-  text-align: center;
   float: left;
   display: block;
   margin-right: 0%;
   width: 100%;
-  position: absolute;
-  padding-top: 10px; }
+  margin-bottom: 60px; }
   .service-hero__image:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 767px) {
     .service-hero__image {
-      position: static;
-      text-align: right;
       float: left;
       display: block;
       margin-right: 0%;
-      width: 33.33333%; }
+      width: 33.33333%;
+      padding: 30px 0;
+      float: right; }
       .service-hero__image:last-child {
         margin-right: 0; } }
 
-.service-hero__image {
-  max-width: 285px; }
+.service-hero__image img {
+  max-width: 285px;
+  margin: 0 auto; }
 
 /**
  * OUTRO
  */
 .outro {
-  margin-top: -30px;
-  margin-bottom: 30px;
+  margin: 0 10px;
   padding-top: 0; }
+  @media screen and (min-width: 767px) {
+    .outro {
+      margin: -30px 10px 30px 10px; } }
 
-.outro__img {
-  padding: 0 90px; }
+.outro .outro__img {
+  margin-bottom: 0; }
+  @media screen and (min-width: 767px) {
+    .outro .outro__img {
+      padding: 0 20px 0 40px; } }
+  @media screen and (min-width: 1024px) {
+    .outro .outro__img {
+      padding: 0 90px; } }
+
+.outro__img img {
+  max-width: 300px;
+  margin: 0 auto; }
 
 .outro__body {
-  padding: 30px 0; }
+  padding: 60px 0; }
+  @media screen and (min-width: 767px) {
+    .outro__body {
+      padding: 30px 0; } }
 
+/**
+ * PROCESS LIST
+ */
 .process {
-  padding-top: 0; }
+  padding-top: 0;
+  margin: 0 20px 60px 20px; }
+  @media screen and (min-height: 1152px) {
+    .process {
+      margin: 0; } }
 
 .wrap--process {
   padding-top: 60px;
@@ -1010,7 +918,7 @@ WRAPS
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0; }
+  margin: 0; }
   .process-list::after {
     clear: both;
     content: "";
@@ -1022,13 +930,12 @@ WRAPS
   margin-right: 0%;
   width: 100%;
   padding: 0 20px;
-  margin-bottom: 10px; }
+  margin-bottom: 60px; }
   .process-item:last-child {
     margin-right: 0; }
   @media screen and (min-width: 640px) {
     .process-item {
       padding: 0 40px;
-      margin-bottom: 10px;
       float: left;
       display: block;
       margin-right: 0%;
@@ -1044,8 +951,14 @@ WRAPS
       .process-item:last-child {
         margin-right: 0; } }
 
+.process-item__title {
+  margin-bottom: 30px; }
+
+.process-item__text {
+  margin-bottom: 0; }
+
 .process-item__image {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%; }
 
 /**

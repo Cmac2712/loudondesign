@@ -2,3 +2,4 @@
 .*.sw*
 *scss.map
 *rsync_excludes.txt
+main.css.map style.css.map
