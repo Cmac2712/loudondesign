@@ -1,5 +1,5 @@
 *.sass-cache/
 .*.sw*
-*scss.map
+*css.map
 *rsync_excludes.txt
 main.css.map style.css.map

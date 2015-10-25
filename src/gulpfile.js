@@ -9,7 +9,7 @@ prefixer   = require('gulp-autoprefixer');
 
 gulp.task('serve', ['sass'], function () {
     bs.init({
-	proxy: "craigmacintyre.co.uk/loudondesign/"
+	proxy: "loudon-design.com"
     }); 
 });
 

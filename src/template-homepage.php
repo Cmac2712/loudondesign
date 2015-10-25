@@ -1,6 +1,6 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
 
-<section class="hero hero--home">
+<section class="hero hero--brand hero--home">
 		<div class="wrap wrap--full-height">
 		    <div class="hero__text hero__text--home">
 			<p><span class="underline">Obsessive attention to detail comes as standard</span>.</p>

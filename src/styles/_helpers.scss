@@ -50,9 +50,10 @@
 
 // Text alignment
 
-.text--left     { text-align:left  !important; }
-.text--center   { text-align:center!important; }
-.text--right    { text-align:right !important; }
+.text--left     { text-align:left    !important; }
+.text--center   { text-align:center  !important; }
+.text--right    { text-align:right   !important; }
+.text--justify  { text-align:justify !important; }
 
 
 // Font weights
@@ -82,6 +83,15 @@
 .push-half--left    { margin-left:  $spacing-unit/2!important; }
 .push-half--ends    { margin-top:   $spacing-unit/2!important; margin-bottom:$spacing-unit/2!important; }
 .push-half--sides   { margin-right: $spacing-unit/2!important; margin-left:  $spacing-unit/2!important; }
+
+.push-big          { margin:       $spacing-unit * 6!important; }
+.push-big--top     { margin-top:   $spacing-unit * 6!important; }
+.push-big--right   { margin-right: $spacing-unit * 6!important; }
+.push-big--bottom  { margin-bottom:$spacing-unit * 6!important; }
+.push-big--left    { margin-left:  $spacing-unit * 6!important; }
+.push-big--ends    { margin-top:   $spacing-unit * 6!important; margin-bottom:$spacing-unit * 6!important; }
+.push-big--sides   { margin-right: $spacing-unit * 6!important; margin-left:  $spacing-unit * 6!important; }
+
 
 .flush          { margin:       0!important; }
 .flush--top     { margin-top:   0!important; }

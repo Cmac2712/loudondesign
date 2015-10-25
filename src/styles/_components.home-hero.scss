@@ -3,25 +3,20 @@
  */
 
 .hero--home {
-    position: relative;
     background-color: #6090a6;
     overflow: hidden;
-    background-image: url($images-url + 'home-hero-background.svg');
-    background-size: 100%;
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
     height: 375px;
     padding-top: 0;
     margin-bottom: 0;
 
-    @media screen and (min-width: $menu-switch) {
-	background-size: 75%;
-	background-position: 55%;
-    }
-
     @include media($desk-up-break) {
 	height: 475px; 
     }
+}
+
+.hero--home.hero--home:before {
+    background-image: url($images-url + 'home-hero-background.svg');
+    opacity: 1;
 }
 
 // Mask
@@ -38,21 +33,21 @@
     }
 }
 
-// Shadow
-.hero--home:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    right: 0;
-    bottom: 0;
-    height: 20px;
-    z-index: 7;
-    box-shadow: inset 3px -6px 12px rgba(0, 0, 0, .1);
+    // Shadow
+    .hero--home .wrap:before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	right: -50%;
+	bottom: 0;
+	height: 20px;
+	z-index: 7;
+	box-shadow: inset 3px -6px 12px rgba(0, 0, 0, .1);
 
-    @media screen and (max-width: $menu-switch) {
-	display: none;
+	@media screen and (max-width: $menu-switch) {
+	    display: none;
+	}
     }
-}
 
 .hero__text--home {
     color: #fff;	
@@ -77,6 +72,7 @@
 
 .hero--home__item--two, 
 .hero--home__item {	
+    position: relative;
 }
 
 .hero--home__item {

@@ -3,6 +3,7 @@
 
 	$(function () {
 		// DOM ready, take it away
+		console.log('DOM ready');
 
 		/**
 		 * Toggle menu

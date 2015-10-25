@@ -1,0 +1,31 @@
+/**
+ * INFO BLOCK
+ * An info block is an image with text underneth.
+ */
+
+.info-item {
+    @include span-columns(12);	
+    padding: 0 $spacing-unit * 2;
+    margin-bottom: $spacing-unit * 6; 
+
+    @include media($lap-up-break) {
+	padding: 0 $spacing-unit * 4;
+	@include span-columns(6);	
+    }
+
+    @include media($desk-up-break) { @include span-columns(4); }
+
+}
+
+    .info-item__title { margin-bottom: $spacing-unit * 3; }
+
+    .info-item__text { text-align: justify; }
+
+    .info-item__text:last-child {
+	margin-bottom: 0;
+    }
+
+    .info-item__image {
+	margin-bottom: $spacing-unit * 3;
+	width: 100%;
+    }

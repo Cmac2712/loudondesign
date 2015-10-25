@@ -29,26 +29,3 @@
     @include outer-container(100%);	
     margin: 0;
 }
-
-    .process-item {
-	@include span-columns(12);	
-	padding: 0 $spacing-unit * 2;
-	margin-bottom: $spacing-unit * 6; 
-
-	@include media($lap-up-break) {
-	    padding: 0 $spacing-unit * 4;
-	    @include span-columns(6);	
-	}
-
-	@include media($desk-up-break) { @include span-columns(4); }
-
-    }
-
-	.process-item__title { margin-bottom: $spacing-unit * 3; }
-
-	.process-item__text { margin-bottom: 0; }
-
-	.process-item__image {
-	    margin-bottom: $spacing-unit * 3;
-	    width: 100%;
-	}

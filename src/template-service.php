@@ -32,10 +32,10 @@ $outro_body     = get_field('outro_body');
 	    </div>
 	    <ol class="clean process-list brand-ordered-list">
 		<?php foreach( $process as $step ): ?>
-		<li class="process-item">
-		    <div class="process-item__image"><img src="<?php echo $step[step_image][sizes][medium]; ?>" alt="<?php echo $step[step_image][alt]; ?>"></div><!--
-		 --><h2 class="process-item__title"><?php echo $step[step_title]; ?></h2><!--
-		 --><p class="process-item__text"><?php echo $step[step_text]; ?></p>
+		<li class="info-item">
+		    <div class="info-item__image"><img src="<?php echo $step[step_image][sizes][medium]; ?>" alt="<?php echo $step[step_image][alt]; ?>"></div><!--
+		 --><h2 class="info-item__title"><?php echo $step[step_title]; ?></h2><!--
+		 --><p class="info-item__text"><?php echo $step[step_text]; ?></p>
 		</li> 
 		<?php endforeach; ?>
 	    </ol>
