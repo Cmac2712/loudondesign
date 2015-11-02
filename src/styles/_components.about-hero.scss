@@ -4,8 +4,11 @@
 
 .hero--about {
     background-color: #ededed;
+    margin-bottom: 0;
 }
 
-    .hero-text--about {
-	    margin-bottom: $spacing-unit * 6;
-    }
+    .hero-text--about { margin-bottom: $spacing-unit * 6; }
+
+        .hero--about .info-item p { text-align: justify; }
+
+        .hero--about .info-item__body p:first-child { @extend .lead; }

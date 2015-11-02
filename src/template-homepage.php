@@ -1,6 +1,6 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
 
-<section class="hero hero--brand hero--home">
+	    <section class="hero hero--brand hero--home">
 		<div class="wrap wrap--full-height">
 		    <div class="hero__text hero__text--home">
 			<p><span class="underline">Obsessive attention to detail comes as standard</span>.</p>
@@ -154,9 +154,9 @@
 	    </section>
 
 <section class="get-started get-started--home">
-<div class="wrap">
-    <p class="get-started__text">I love what I do, if you have a project you would like me to work on feel free to get in touch.</p>
-    <a class="button button--branded" href="/contact">Let's Get Started</a>
+    <div class="wrap">
+	<p class="get-started__text">I love what I do, if you have a project you would like me to work on feel free to get in touch.</p>
+	<a class="button button--branded" href="/contact">Let's Get Started</a>
 </div>
 </section>
 

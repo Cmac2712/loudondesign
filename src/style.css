@@ -294,9 +294,6 @@ input {
 .info-item__title {
   margin-bottom: 30px; }
 
-.info-item__text {
-  text-align: justify; }
-
 .info-item__text:last-child {
   margin-bottom: 0; }
 
@@ -336,9 +333,29 @@ input {
   bottom: -2px; }
 
 /**
+ * SPAN COLUMNS
+ * Some reusabe classes for uses with the Neat grid
+ */
+.one-whole {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%; }
+  .one-whole:last-child {
+    margin-right: 0; }
+
+.one-half {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 50%; }
+  .one-half:last-child {
+    margin-right: 0; }
+
+/**
  * TEXT
  */
-.lead {
+.lead, .hero--about .info-item__body p:first-child, .about__body p:nth-child(2) {
   font-size: 17.6px; }
 
 .highlight,
@@ -807,10 +824,79 @@ WRAPS
  * ABOUT HERO   
  */
 .hero--about {
-  background-color: #ededed; }
+  background-color: #ededed;
+  margin-bottom: 0; }
 
 .hero-text--about {
   margin-bottom: 60px; }
+
+.hero--about .info-item p {
+  text-align: justify; }
+
+/**
+ * ABOUT
+ */
+.about {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .about::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.about__media,
+.about__body {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%;
+  padding: 0 30px; }
+  .about__media:last-child,
+  .about__body:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 930px) {
+    .about__media,
+    .about__body {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 50%; }
+      .about__media:last-child,
+      .about__body:last-child {
+        margin-right: 0; } }
+
+.about__media {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px; }
+  .about__media::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 930px) {
+    .about__media {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 50%;
+      padding-left: 0;
+      margin-bottom: 0; }
+      .about__media:last-child {
+        margin-right: 0; } }
+
+.about__media * {
+  padding-bottom: 10px; }
+
+.about__media *:nth-child(2) {
+  padding-right: 10px; }
+
+.about__media *:nth-child(3) {
+  padding-left: 10px; }
+
+.about__body {
+  text-align: justify; }
 
 /**
  * BRAND HERO BACKGROUND  

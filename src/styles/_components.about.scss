@@ -1,0 +1,36 @@
+/**
+ * ABOUT
+ */
+
+.about { @include outer-container(100%); }
+
+    .about__media,
+    .about__body {
+	@include span-columns(12);
+	//border: 1px solid green;
+	padding: 0 $spacing-unit * 3;
+
+	@media screen and (min-width: 930px) { @include span-columns(6); }
+    }
+
+    .about__media {
+	@include outer-container(100%);
+	margin-bottom: $spacing-unit * 4;
+	
+	@media screen and (min-width: 930px) {
+	    @include span-columns(6);
+	    padding-left: 0;
+	    margin-bottom: 0;
+	}
+    }
+
+	.about__media * { padding-bottom: $spacing-unit; }
+
+	.about__media *:nth-child(2) { padding-right: $spacing-unit; }
+	.about__media *:nth-child(3) { padding-left: $spacing-unit; }
+
+    .about__body { text-align: justify; }
+
+    .about__body p:nth-child(2) { @extend .lead; }
+
+

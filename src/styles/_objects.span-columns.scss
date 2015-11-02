@@ -1,0 +1,8 @@
+/**
+ * SPAN COLUMNS
+ * Some reusabe classes for uses with the Neat grid
+ */
+
+.one-whole { @include span-columns(12); }
+
+.one-half { @include span-columns(6); }
