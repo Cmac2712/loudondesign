@@ -1,6 +1,6 @@
-<?php 
-/* Template Name: About Page Template */ 
-get_header(); 
+<?php
+/* Template Name: About Page Template */
+get_header();
 
 while (have_posts()) : the_post();
 endwhile;
@@ -18,7 +18,7 @@ $get_started_body = get_field('get_started_body');
 	    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 1 ); } ?>
 
 	</div>
-	    
+
 	    <?php foreach ($header_blocks as $header_block): ?>
 		<div class="info-item">
 		    <div class="info-item__image">
@@ -28,7 +28,7 @@ $get_started_body = get_field('get_started_body');
 		    <div class="info-item__body"><?php echo $header_block['header_block_text']; ?></div>
 		</div>
 	    <?php endforeach; ?>
-	
+
     </div>
 </section>
 
