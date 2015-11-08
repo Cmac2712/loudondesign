@@ -1,5 +1,17 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
 
+<?php
+
+while (have_posts()) : the_post();
+endwhile;
+
+$get_started_title = get_field('get_started_title');
+$get_started_body = get_field('get_started_body');
+
+var_dump($get_started_body);
+
+?>
+
 	    <section class="hero hero--brand hero--home">
 		<div class="wrap wrap--full-height">
 		    <div class="hero__text hero__text--home">
@@ -17,7 +29,7 @@
 <section class="hard--top flush--bottom">
 		<div class="wrap wrap--home-blocks">
 		    <div class="home-blocks">
-			<div class="block block--one"> 
+			<div class="block block--one">
 			    <div class="services">
 				<h2 class="services__title">Can I help your business?</h2>
 				<p class="lead">If you are looking for <a href="" class="highlight em">Logo Design</a>, <a href="#" class="highlight em">Graphic Design</a> or <a href="#" class="highlight em">Web Design</a> you have come to the right place.</p>
@@ -27,7 +39,7 @@
 				<div class="services-grid__major">
 				    <div class="services-grid__background">
 					<div class="service-icon">
-					    <?php echo file_get_contents(get_template_directory_uri().'/img/webdesign.svg'); ?>   
+					    <?php echo file_get_contents(get_template_directory_uri().'/img/webdesign.svg'); ?>
 					    <h2 class="service-icon__label">Web Design</h2>
 					</div>
 				    </div>
@@ -36,7 +48,7 @@
 				    <div class="services-grid__minor">
 					<div class="services-grid__background">
 					    <div class="service-icon service-icon--small">
-						<?php echo file_get_contents(get_template_directory_uri().'/img/graphicdesigner.svg'); ?>   
+						<?php echo file_get_contents(get_template_directory_uri().'/img/graphicdesigner.svg'); ?>
 						<h2 class="service-icon__label service-icon__label--small">Graphic Design</h2>
 					    </div>
 					</div>
@@ -44,7 +56,7 @@
 				    <div class="services-grid__minor">
 					<div class="services-grid__background">
 					    <div class="service-icon service-icon--small">
-						<?php echo file_get_contents(get_template_directory_uri().'/img/logodesign.svg'); ?>   
+						<?php echo file_get_contents(get_template_directory_uri().'/img/logodesign.svg'); ?>
 						<h2 class="service-icon__label service-icon__label--small">Logo Design</h2>
 					    </div>
 					</div>
@@ -69,7 +81,7 @@
 			</div>
 
 		    </div>
-		</div> 
+		</div>
 
 		<div class="wrap wrap--home-blocks">
 		    <div class="home-blocks">
@@ -134,11 +146,11 @@
 				</p>
 				<p>
 				    I have worked with the web for over 12 years, quality checking some of the world's largest brand websites. Each video is
-				    accompanied with a <span class="highlight">PDF report</span> of the findings and followed up by <span class="highlight">one hour FREE consultation</span> to discuss the actions needed to 
-				    tighten your offering.	
+				    accompanied with a <span class="highlight">PDF report</span> of the findings and followed up by <span class="highlight">one hour FREE consultation</span> to discuss the actions needed to
+				    tighten your offering.
 				</p>
 				<div class="health-check__link">
-				    <a href="" class="button button--branded">Book a Health Check</a> <span class="or-learn-more">or <a href="">Learn More <span class="highlight">&raquo;</span></a></span> 
+				    <a href="" class="button button--branded">Book a Health Check</a> <span class="or-learn-more">or <a href="">Learn More <span class="highlight">&raquo;</span></a></span>
 				</div>
 			    </div>
 			    <div class="block block--seven zoom-hover-parent">
@@ -155,7 +167,8 @@
 
 <section class="get-started get-started--home">
     <div class="wrap">
-	<p class="get-started__text">I love what I do, if you have a project you would like me to work on feel free to get in touch.</p>
+	<h2><?php echo $get_started_title; ?></h2>
+	<div class="get-started__text"><?php echo $get_started_body; ?></div>
 	<a class="button button--branded" href="/contact">Let's Get Started</a>
 </div>
 </section>

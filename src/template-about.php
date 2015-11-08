@@ -20,7 +20,7 @@ $get_started_body = get_field('get_started_body');
 	</div>
 
 	    <?php foreach ($header_blocks as $header_block): ?>
-		<div class="info-item">
+		<div class="info-item info-item--stack">
 		    <div class="info-item__image">
 			<img src="<?php echo $header_block['header_block_image']['url']; ?>" alt="">
 		    </div>

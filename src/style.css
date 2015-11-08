@@ -291,6 +291,34 @@ input {
       .info-item:last-child {
         margin-right: 0; } }
 
+@media screen and (min-width: 640px) {
+  .info-item--stack {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 33.33333%;
+    padding: 0 20px; }
+    .info-item--stack:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 1024px) {
+  .info-item--stack {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 50%; }
+    .info-item--stack:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 1024px) {
+  .info-item--stack {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 33.33333%; }
+    .info-item--stack:last-child {
+      margin-right: 0; } }
+
 .info-item__title {
   margin-bottom: 30px; }
 

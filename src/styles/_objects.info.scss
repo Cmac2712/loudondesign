@@ -4,18 +4,31 @@
  */
 
 .info-item {
-    @include span-columns(12);	
+    @include span-columns(12);
     padding: 0 $spacing-unit * 2;
-    margin-bottom: $spacing-unit * 6; 
+    margin-bottom: $spacing-unit * 6;
 
     @include media($lap-up-break) {
 	padding: 0 $spacing-unit * 4;
-	@include span-columns(6);	
+	@include span-columns(6);
     }
 
     @include media($desk-up-break) { @include span-columns(4); }
 
 }
+
+    .info-item--stack {
+	@include media($lap-up-break) {
+	    @include span-columns(4);
+	    padding: 0 $spacing-unit * 2;
+	}
+
+	@include media($desk-up-break) {
+	    @include span-columns(6);
+	}
+
+	@include media($desk-up-break) { @include span-columns(4); }
+    }
 
     .info-item__title { margin-bottom: $spacing-unit * 3; }
 
