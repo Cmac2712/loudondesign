@@ -2,7 +2,7 @@
 	<div class="wrap wrap--footer">
 	    <div class="footer-block hire-me">
 	    <div class="footer-block__image hire-me__image">
-		<?php echo file_get_contents(get_template_directory_uri().'/img/logo.svg'); ?>   
+		<?php echo file_get_contents(get_template_directory_uri().'/img/logo.svg'); ?>
 	    </div>
 	    <div class="footer-block__text hire-me__text">
 	        <h5>Hire me for your Design Work</h5>
@@ -24,11 +24,11 @@
 
 
 	</div>
-	
+
 	<div class="wrap wrap--footer">
 	    <nav class="nav--footer">
 	    <div class="nav-list nav-list--one">
-	        <h5><span role="button" class="toggle-button" data-section="#js-footer-block-1">Design<span class="icon-chevron-down flip"></span></span></h5> 
+	        <h5><span role="button" class="toggle-button" data-section="#js-footer-block-1">Design<span class="icon-chevron-down flip"></span></span></h5>
 		<?php echo footer_design_menu_nav(); ?>
 	    </div>
 	    <div class="nav-list nav-list--two">
