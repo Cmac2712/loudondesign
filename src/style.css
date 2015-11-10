@@ -991,6 +991,18 @@ WRAPS
 .profile__info__title {
   margin-bottom: 0; }
 
+.block-desc {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  color: #fff; }
+
+.block-desc__title {
+  margin-bottom: 10px; }
+
+.block-desc__info {
+  margin-bottom: 20px; }
+
 /**
  * SERVICE HERO 
  * Service hero section for service pages
@@ -2617,5 +2629,3 @@ span.icon-pinterest {
   content: "";
   display: table;
   clear: both; }
-
-/*# sourceMappingURL=style.css.map */

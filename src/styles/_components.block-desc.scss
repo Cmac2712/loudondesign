@@ -1,0 +1,14 @@
+.block-desc {
+    position: absolute;
+    bottom: 0;
+    left: $spacing-unit * 2;
+    color: #fff;
+}
+
+    .block-desc__title {
+    	margin-bottom: $spacing-unit;
+    }
+
+    .block-desc__info {
+	margin-bottom: $spacing-unit * 2;
+    }

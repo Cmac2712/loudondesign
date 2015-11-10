@@ -8,8 +8,6 @@ endwhile;
 $get_started_title = get_field('get_started_title');
 $get_started_body = get_field('get_started_body');
 
-var_dump($get_started_body);
-
 ?>
 
 	    <section class="hero hero--brand hero--home">
