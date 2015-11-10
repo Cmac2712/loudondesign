@@ -66,13 +66,13 @@ class Main_Nav_Walker extends Walker {
 
     // Tell Walker where to inherit it's parent and id values
     var $db_fields = array(
-        'parent' => 'menu_item_parent', 
-        'id'     => 'db_id' 
+        'parent' => 'menu_item_parent',
+        'id'     => 'db_id'
     );
 
     /**
      * At the start of each element, output a <li> and <a> tag structure.
-     * 
+     *
      * Note: Menu objects include url and title properties, so we will use those.
      */
     function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
@@ -86,14 +86,14 @@ class Main_Nav_Walker extends Walker {
     }
 
     function start_lvl( &$output, $depth = 0 ) {
-	    
-	$output .= '</ul><ul>';	
+
+	$output .= '</ul><ul>';
 
     }
 
     function end_lvl( &$output ) {
-	
-       $output .= '</li></ul>';	
+
+       $output .= '</li></ul>';
     }
 }
 
@@ -358,8 +358,8 @@ function register_html5_menu()
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
         'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'footer-design-menu' => __('Footer Design Menu', 'html5blank'), // Footer Design 
-        'footer-business-menu' => __('Footer Business Menu', 'html5blank'), // Footer Business 
+        'footer-design-menu' => __('Footer Design Menu', 'html5blank'), // Footer Design
+        'footer-business-menu' => __('Footer Business Menu', 'html5blank'), // Footer Business
         'footer-about-menu' => __('Footer About Menu', 'html5blank'), // Footer About
         'footer-social-menu' => __('Footer Social Menu', 'html5blank'), // Social About
         'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)

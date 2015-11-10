@@ -44,34 +44,34 @@
 
 	<?php require_once('contact.php'); ?>
 
-			<!-- header -->
-			<header class="main-header" role="banner">
-			    <div class="wrap main-header__wrap">
-				    <a id="mainNav-button" class="main-nav-button" href="#" data-toggle="mainNav">
-				<div class="hamburger">
-				    <div class="hamburger__slice hamburger__slice--top"></div>
-				    <div class="hamburger__slice hamburger__slice--mid"></div>
-				    <div class="hamburger__slice hamburger__slice--btm"></div>
-				</div>
-			    </a>
-			    <a class="phone--mobile" href="tel:07980961805">
-				<span class="icon-phone"></span>
-			    </a>
-			    <div class="details details--left">
-				<span class="details__name">John Loudon</span>
-				<span class="details__job-title">Designer &amp; Illustrator</span>
-			    </div>
-			    <div class="details details--right">
-				<span class="details__envelope"><span class="icon-envelope"></span>Kick Start Your Project</span>
-				<span class="details__phone"><span class="icon-phone"></span><a href="tel:07980961805">07572750380</a></span>
-			    </div>
-			    <a href="/" class="main-header__logo">
-				<?php echo file_get_contents(get_template_directory_uri().'/img/logo.svg'); ?>
-			    </a>
-			    </div>
-				<nav id="mainNav" class="main-nav" role="navigation">
-					<?php html5blank_nav(); ?>
-				</nav>
-				<!-- /nav -->
-			</header>
-			<!-- /header -->
+	<!-- header -->
+	<header class="main-header" role="banner">
+	    <div class="wrap main-header__wrap">
+		    <a id="mainNav-button" class="main-nav-button" href="#" data-toggle="mainNav">
+		<div class="hamburger">
+		    <div class="hamburger__slice hamburger__slice--top"></div>
+		    <div class="hamburger__slice hamburger__slice--mid"></div>
+		    <div class="hamburger__slice hamburger__slice--btm"></div>
+		</div>
+	    </a>
+	    <a class="phone--mobile" href="tel:07980961805">
+		<span class="icon-phone"></span>
+	    </a>
+	    <div class="details details--left">
+		<span class="details__name">John Loudon</span>
+		<span class="details__job-title">Designer &amp; Illustrator</span>
+	    </div>
+	    <div class="details details--right">
+		<span class="details__envelope"><span class="icon-envelope"></span>Kick Start Your Project</span>
+		<span class="details__phone"><span class="icon-phone"></span><a href="tel:07980961805">07572750380</a></span>
+	    </div>
+	    <a href="/" class="main-header__logo">
+		<?php echo file_get_contents(get_template_directory_uri().'/img/logo.svg'); ?>
+	    </a>
+	    </div>
+		<nav id="mainNav" class="main-nav" role="navigation">
+			<?php html5blank_nav(); ?>
+		</nav>
+		<!-- /nav -->
+	</header>
+	<!-- /header -->
