@@ -200,7 +200,7 @@ function footer_design_menu_nav()
         'after'           => '',
         'link_before'     => '',
         'link_after'      => '',
-        'items_wrap'      => '<ul id="js-footer-block-1" class="footer-list">%3$s</ul>',
+        'items_wrap'      => '<ul id="js-footer-block-1" class="clean footer-list">%3$s</ul>',
         'depth'           => 0,
         'walker'          => ''
         )
@@ -224,7 +224,7 @@ function footer_business_menu_nav()
         'after'           => '',
         'link_before'     => '',
         'link_after'      => '',
-        'items_wrap'      => '<ul id="js-footer-block-2" class="footer-list">%3$s</ul>',
+        'items_wrap'      => '<ul id="js-footer-block-2" class="clean footer-list">%3$s</ul>',
         'depth'           => 0,
         'walker'          => ''
         )
@@ -248,7 +248,7 @@ function footer_about_menu_nav()
         'after'           => '',
         'link_before'     => '',
         'link_after'      => '',
-        'items_wrap'      => '<ul id="js-footer-block-3" class="footer-list">%3$s</ul>',
+        'items_wrap'      => '<ul id="js-footer-block-3" class="clean footer-list">%3$s</ul>',
         'depth'           => 0,
         'walker'          => ''
         )
