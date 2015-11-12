@@ -3,6 +3,13 @@
  * Some reusabe classes for uses with the Neat grid
  */
 
+.span-12,
 .one-whole { @include span-columns(12); }
 
+.span-6,
 .one-half { @include span-columns(6); }
+
+.span-3,
+.one-quarter { @include span-columns(3); }
+
+.span-2 { @include span-columns(2); }

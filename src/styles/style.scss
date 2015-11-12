@@ -20,6 +20,7 @@ $gutter: 4em;
 @import 'objects.hero';
 @import 'objects.hovers';
 @import 'objects.icons';
+@import 'objects.links';
 @import 'objects.info';
 @import 'objects.layers';
 @import 'objects.lists';
@@ -39,8 +40,9 @@ $inuit-enable-media--responsive: true;
 $inuit-media-collapse-at:        $lap-reg-start;
 @import 'bower_components/inuit-media/_objects.media.scss';
 @import 'components.contact';
-@import 'components.clock';
+@import 'components.clock'; // DEPRECATED
 @import 'components.header';
+@import 'components.cv';
 @import 'components.get-started';
 @import 'components.home-hero';
 @import 'components.about-hero';

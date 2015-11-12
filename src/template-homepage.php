@@ -35,29 +35,29 @@ $get_started_body = get_field('get_started_body');
 
 			    <div class="services-grid">
 				<div class="services-grid__major">
-				    <div class="services-grid__background">
+				    <a href="/web-design" class="services-grid__background block-link">
 					<div class="service-icon">
 					    <?php echo file_get_contents(get_template_directory_uri().'/img/webdesign.svg'); ?>
 					    <h2 class="service-icon__label">Web Design</h2>
 					</div>
-				    </div>
+				    </a>
 				</div>
 				<div class="services-grid__minors">
 				    <div class="services-grid__minor">
-					<div class="services-grid__background">
+					<a href="/graphic-design" class="services-grid__background block-link">
 					    <div class="service-icon service-icon--small">
 						<?php echo file_get_contents(get_template_directory_uri().'/img/graphicdesigner.svg'); ?>
 						<h2 class="service-icon__label service-icon__label--small">Graphic Design</h2>
 					    </div>
-					</div>
+					</a>
 				    </div>
 				    <div class="services-grid__minor">
-					<div class="services-grid__background">
+					<a href="/logo-design" class="services-grid__background block-link">
 					    <div class="service-icon service-icon--small">
 						<?php echo file_get_contents(get_template_directory_uri().'/img/logodesign.svg'); ?>
 						<h2 class="service-icon__label service-icon__label--small">Logo Design</h2>
 					    </div>
-					</div>
+					</a>
 				    </div>
 				</div>
 			    </div>
@@ -167,7 +167,7 @@ $get_started_body = get_field('get_started_body');
     <div class="wrap">
 	<h2><?php echo $get_started_title; ?></h2>
 	<div class="get-started__text"><?php echo $get_started_body; ?></div>
-	<a class="button button--branded" href="/contact">Let's Get Started</a>
+	<a id="js-get-started" class="button button--branded" href="/contact">Let's Get Started</a>
 </div>
 </section>
 

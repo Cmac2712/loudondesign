@@ -1,0 +1,9 @@
+.block-link:hover,
+.block-link:focus,
+.block-link:active,
+.block-link:visited,
+.block-link:link,
+.block-link {
+    display: block;
+    color: $font-color;
+}

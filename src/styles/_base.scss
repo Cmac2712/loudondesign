@@ -1,5 +1,5 @@
 /*-----------------------------*\
-  
+
 BASE
 
 \*-----------------------------*/
@@ -8,7 +8,7 @@ BASE
 body {
     font-family: $brand-font;
     font-size: $font-size;
-    line-height: $font-size * 1.5; 
+    line-height: $font-size * 1.5;
     color: $font-color;
 }
 
@@ -88,7 +88,7 @@ form {
 }
 
 input {
-    padding: $spacing-unit;    	
+    padding: $spacing-unit;
     width: 100%;
     border-radius: 0;
     border: 0;

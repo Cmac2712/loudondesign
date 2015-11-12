@@ -37,53 +37,53 @@ body {
 
 	//@include media() {}
     }
-    
-	.contact--intro {
-	    @include span-columns(12);	
-	    
+
+	.contact--first {
+	    @include span-columns(12);
+
 	    @media screen and (min-width: $menu-switch) {
-		@include span-columns(6);	
+		@include span-columns(6);
 	    }
 
 	    @media screen and (min-width: $desk-start) {
-		@include span-columns(5);	
+		@include span-columns(3);
 	    }
 	}
-	
-	.contact--methods {
-	    @include span-columns(12);	
+
+	.contact--second {
+	    @include span-columns(12);
 
 	    @media screen and (min-width: $menu-switch) {
-		@include span-columns(6);	
+		@include span-columns(6);
 	    }
-	    
+
 	    @media screen and (min-width: $desk-start) {
-		@include span-columns(3);	
+		@include span-columns(3);
 	    }
 	}
 
-	.contact--address {
-	    @include span-columns(12);	
+	.contact--third {
+	    @include span-columns(12);
 
 	    @media screen and (min-width: $menu-switch) {
-		@include span-columns(6);	
+		@include span-columns(6);
 	    }
-	    
+
 	    @media screen and (min-width: $desk-start) {
-		@include span-columns(2);	
+		@include span-columns(3);
 	    }
 	}
 
-	.contact--clock {
-	    @include span-columns(12);	
+	.contact--global {
+	    @include span-columns(12);
 	    padding-right: 0;
 
 	    @media screen and (min-width: $menu-switch) {
-		@include span-columns(6);	
+		@include span-columns(3);
 	    }
-	    
+
 	    @media screen and (min-width: $desk-start) {
-		@include span-columns(2);	
+		@include span-columns(2);
 	    }
 	}
 
@@ -96,5 +96,5 @@ body {
 .contact__details [style="text-decoration: underline;"] {
     text-decoration: none!important;
     border-bottom: 2px solid $brand-color;
-    @extend .underline;	
+    @extend .underline;
 }

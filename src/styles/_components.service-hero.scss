@@ -1,5 +1,5 @@
 /**
- * SERVICE HERO 
+ * SERVICE HERO
  * Service hero section for service pages
  */
 
@@ -8,17 +8,18 @@
     padding: $spacing-unit * 6 $spacing-unit * 2 0 $spacing-unit * 2;
     margin-bottom: $spacing-unit * 6;
     background-color: #fff;
+    min-height: 0;
 }
 
     .service-hero .wrap { @include outer-container; }
 
 	.service-hero__text {
-	    @include span-columns(12);	
+	    @include span-columns(12);
 	    padding: 0;
 	    //text-align: justify;
 
 	    @include media($lap-reg-start) {
-		@include span-columns(8);	
+		@include span-columns(8);
 		padding: 0 $spacing-unit * 3 0 0;
 	    }
 	}
@@ -29,17 +30,17 @@
 	    }
 
 	.service-hero__image {
-	    @include span-columns(12);	
+	    @include span-columns(12);
 	    margin-bottom: $spacing-unit * 6;
 
 	    @include media($lap-reg-start) {
-		@include span-columns(4);	
+		@include span-columns(4);
 		padding: $spacing-unit * 3 0;
 		float: right;
 	    }
 	}
 
-	    .service-hero__image img { 
-		max-width: 285px; 
+	    .service-hero__image img {
+		max-width: 285px;
 		margin: 0 auto;
 	    }
