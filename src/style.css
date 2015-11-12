@@ -106,7 +106,7 @@ GENERIC
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/*-----------------------------*  
+/*-----------------------------*
 BASE
 
 \*-----------------------------*/
@@ -129,7 +129,7 @@ h6 {
   margin: 0 0 20px 0;
   font-weight: normal; }
 
-h1, .alpha {
+h1, .alpha, .cv h1 {
   font-size: 1.5em;
   line-height: .83em; }
 
@@ -137,7 +137,7 @@ h2, .beta {
   font-size: 1.375em;
   line-height: .91em; }
 
-h3, .gamma, .contact__details h2 {
+h3, .gamma, .contact__details h2, .cv dt {
   font-size: 1.25em;
   line-height: 1em; }
 
@@ -260,6 +260,15 @@ input {
   display: inline-block;
   font-size: 16px; }
 
+.block-link:hover,
+.block-link:focus,
+.block-link:active,
+.block-link:visited,
+.block-link:link,
+.block-link {
+  display: block;
+  color: #303030; }
+
 /**
  * INFO BLOCK
  * An info block is an image with text underneth.
@@ -339,7 +348,7 @@ input {
 /**
  * LISTS
  */
-.clean {
+.clean, .cv dl {
   list-style-type: none;
   padding: 0; }
 
@@ -364,20 +373,42 @@ input {
  * SPAN COLUMNS
  * Some reusabe classes for uses with the Neat grid
  */
+.span-12,
 .one-whole {
   float: left;
   display: block;
   margin-right: 0%;
   width: 100%; }
+  .span-12:last-child,
   .one-whole:last-child {
     margin-right: 0; }
 
+.span-6,
 .one-half {
   float: left;
   display: block;
   margin-right: 0%;
   width: 50%; }
+  .span-6:last-child,
   .one-half:last-child {
+    margin-right: 0; }
+
+.span-3,
+.one-quarter {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 25%; }
+  .span-3:last-child,
+  .one-quarter:last-child {
+    margin-right: 0; }
+
+.span-2 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 16.66667%; }
+  .span-2:last-child {
     margin-right: 0; }
 
 /**
@@ -512,101 +543,101 @@ WRAPS
 .contact__details {
   padding-right: 50px; }
 
-.contact--intro {
+.contact--first {
   float: left;
   display: block;
   margin-right: 0%;
   width: 100%; }
-  .contact--intro:last-child {
+  .contact--first:last-child {
     margin-right: 0; }
   @media screen and (min-width: 600px) {
-    .contact--intro {
+    .contact--first {
       float: left;
       display: block;
       margin-right: 0%;
       width: 50%; }
-      .contact--intro:last-child {
+      .contact--first:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 1024px) {
-    .contact--intro {
-      float: left;
-      display: block;
-      margin-right: 0%;
-      width: 41.66667%; }
-      .contact--intro:last-child {
-        margin-right: 0; } }
-
-.contact--methods {
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 100%; }
-  .contact--methods:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 600px) {
-    .contact--methods {
-      float: left;
-      display: block;
-      margin-right: 0%;
-      width: 50%; }
-      .contact--methods:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 1024px) {
-    .contact--methods {
+    .contact--first {
       float: left;
       display: block;
       margin-right: 0%;
       width: 25%; }
-      .contact--methods:last-child {
+      .contact--first:last-child {
         margin-right: 0; } }
 
-.contact--address {
+.contact--second {
   float: left;
   display: block;
   margin-right: 0%;
   width: 100%; }
-  .contact--address:last-child {
+  .contact--second:last-child {
     margin-right: 0; }
   @media screen and (min-width: 600px) {
-    .contact--address {
+    .contact--second {
       float: left;
       display: block;
       margin-right: 0%;
       width: 50%; }
-      .contact--address:last-child {
+      .contact--second:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 1024px) {
-    .contact--address {
+    .contact--second {
       float: left;
       display: block;
       margin-right: 0%;
-      width: 16.66667%; }
-      .contact--address:last-child {
+      width: 25%; }
+      .contact--second:last-child {
         margin-right: 0; } }
 
-.contact--clock {
+.contact--third {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%; }
+  .contact--third:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 600px) {
+    .contact--third {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 50%; }
+      .contact--third:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 1024px) {
+    .contact--third {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 25%; }
+      .contact--third:last-child {
+        margin-right: 0; } }
+
+.contact--global {
   float: left;
   display: block;
   margin-right: 0%;
   width: 100%;
   padding-right: 0; }
-  .contact--clock:last-child {
+  .contact--global:last-child {
     margin-right: 0; }
   @media screen and (min-width: 600px) {
-    .contact--clock {
+    .contact--global {
       float: left;
       display: block;
       margin-right: 0%;
-      width: 50%; }
-      .contact--clock:last-child {
+      width: 25%; }
+      .contact--global:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 1024px) {
-    .contact--clock {
+    .contact--global {
       float: left;
       display: block;
       margin-right: 0%;
       width: 16.66667%; }
-      .contact--clock:last-child {
+      .contact--global:last-child {
         margin-right: 0; } }
 
 .contact__details h2 {
@@ -721,6 +752,30 @@ WRAPS
 .details .icon-phone {
   font-size: 16px;
   vertical-align: -1px; }
+
+/**
+ * CV
+ */
+.cv {
+  font-size: 0; }
+
+.cv h1 {
+  font-size: 1.5rem;
+  margin-bottom: 30px; }
+
+.cv dl {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin: 0;
+  padding: 0 30px 30px 0; }
+
+.cv dt {
+  font-weight: 400; }
+
+.cv dd {
+  margin: 0; }
 
 /**
  *  GET STARTED
@@ -1004,14 +1059,15 @@ WRAPS
   margin-bottom: 20px; }
 
 /**
- * SERVICE HERO 
+ * SERVICE HERO
  * Service hero section for service pages
  */
 .service-hero {
   position: relative;
   padding: 60px 20px 0 20px;
   margin-bottom: 60px;
-  background-color: #fff; }
+  background-color: #fff;
+  min-height: 0; }
 
 .service-hero .wrap {
   max-width: 68em;

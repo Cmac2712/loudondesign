@@ -63,6 +63,7 @@
 			}, {
 			    duration: 500
 			}, "easeInSine");
+		    scrollToTop();
 		    } else {
 			contactPanel.velocity({
 			    maxHeight: 0
@@ -73,6 +74,11 @@
 
 		    e.preventDefault();
 		});
+
+		/** Scroll to top. */
+		function scrollToTop () {
+		    $('html, body').velocity('scroll', 300);
+		};
 
 	});
 

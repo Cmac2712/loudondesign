@@ -11,27 +11,25 @@ $query = new WP_Query(array( 'pagename' => 'contact'));
     <div class="contact--outer" style="display: none;">
 	<div class="wrap">
 	    <div class="contact--inner">
-	    
-		<div class="contact__details contact--intro">
+
+		<div class="contact__details contact--first">
 		    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 1 ); } ?>
 		</div>
 
-		<div class="contact__details contact--methods">
+		<div class="contact__details contact--second">
 		    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 2 ); } ?>
 		</div>
-		
-		<div class="contact__details contact--address">
+
+		<div class="contact__details contact--third">
 		    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 3 ); } ?>
 		</div>
 
-		<div class="contact__details contact--clock">
-		    <div class="clock">
-		    </div>
+		<div class="contact__details contact--global">
 		</div>
 
 	    </div>
 	</div>
-    </div>    
+    </div>
 
     <?php endwhile; ?>
 

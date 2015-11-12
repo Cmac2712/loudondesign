@@ -34,6 +34,7 @@ $get_started_body = get_field('get_started_body');
 
 <section class="about">
     <div class="wrap">
+
 	<div class="about__media">
 	    <div class="one-whole">
 		<img src="http://loudon-design.com/wp-content/uploads/2015/08/red-250x135.png" alt="">
@@ -48,6 +49,12 @@ $get_started_body = get_field('get_started_body');
 	<div class="about__body">
 	    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 2 ); } ?>
 	</div>
+    </div>
+</section>
+
+<section class="cv">
+    <div class="wrap">
+	    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 3 ); } ?>
     </div>
 </section>
 
