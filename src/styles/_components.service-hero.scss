@@ -36,6 +36,8 @@
 	    @include media($lap-reg-start) {
 		@include span-columns(4);
 		padding: $spacing-unit * 3 0;
+		margin-bottom: 0;
+		padding-bottom: 0;
 		float: right;
 	    }
 	}

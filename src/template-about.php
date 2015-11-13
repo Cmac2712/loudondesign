@@ -37,24 +37,24 @@ $get_started_body = get_field('get_started_body');
 
 	<div class="about__media">
 	    <div class="one-whole">
-		<img src="http://loudon-design.com/wp-content/uploads/2015/08/red-250x135.png" alt="">
+		<?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 2 ); } ?>
 	    </div>
 	    <div class="one-half">
-		<img src="http://loudon-design.com/wp-content/uploads/2015/08/red-250x135.png" alt="">
+		<?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 3 ); } ?>
 	    </div>
 	    <div class="one-half">
-		<img src="http://loudon-design.com/wp-content/uploads/2015/08/red-250x135.png" alt="">
+		<?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 4 ); } ?>
 	    </div>
 	</div>
 	<div class="about__body">
-	    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 2 ); } ?>
+	    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 5 ); } ?>
 	</div>
     </div>
 </section>
 
 <section class="cv">
     <div class="wrap">
-	    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 3 ); } ?>
+	    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 6 ); } ?>
     </div>
 </section>
 
