@@ -25,6 +25,7 @@ $query = new WP_Query(array( 'pagename' => 'contact'));
 		</div>
 
 		<div class="contact__details contact--global">
+		    <?php if ( function_exists( 'the_content_part' ) ) { the_content_part( 4 ); } ?>
 		</div>
 
 	    </div>

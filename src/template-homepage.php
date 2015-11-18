@@ -10,16 +10,11 @@ $get_started_body = get_field('get_started_body');
 
 ?>
 
-	    <section class="hero hero--brand hero--home">
+	    <section class="hero hero--home">
 		<div class="wrap wrap--full-height">
 		    <div class="hero__text hero__text--home">
-			<p><span class="underline">Obsessive attention to detail comes as standard</span>.</p>
-		    </div>
-		    <div class="hero--home__item--two">
-		    <img src="<?php echo get_template_directory_uri(); ?>/img/hero-item--two.png" alt="">
-		    </div>
-		    <div class="hero--home__item">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/hero-item.png" alt="">
+			<p class="mega">IMPROVE CONVERSION RATES</p>
+			<p>TURN MORE VISITORS INTO CUSTOMERS</p>
 		    </div>
 		</div>
 	    </section>

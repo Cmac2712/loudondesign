@@ -3,20 +3,17 @@
  */
 
 .hero--home {
-    background-color: #6090a6;
+    position: relative;
+    background-image: url($images-url + 'home-hero-background.png');
     overflow: hidden;
     height: 375px;
     padding-top: 0;
     margin-bottom: 0;
+    z-index: 999;
 
     @include media($desk-up-break) {
-	height: 475px; 
+	height: 475px;
     }
-}
-
-.hero--home.hero--home:before {
-    background-image: url($images-url + 'home-hero-background.svg');
-    opacity: 1;
 }
 
 // Mask
@@ -24,12 +21,16 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: $spacing-unit--double*2;
     width: 50%;
     background-color: #fff;
 
     @media screen and (min-width: $menu-switch) {
 	content: "";
+	height: $spacing-unit--double * 2;
+    }
+
+    @media screen and (min-width: $desk-start) {
+	height: $spacing-unit--double * 3;
     }
 }
 
@@ -39,7 +40,7 @@
 	position: absolute;
 	left: 50%;
 	right: -50%;
-	bottom: 0;
+	bottom: -$spacing-unit * 3;
 	height: 20px;
 	z-index: 7;
 	box-shadow: inset 3px -6px 12px rgba(0, 0, 0, .1);
@@ -50,28 +51,48 @@
     }
 
 .hero__text--home {
-    color: #fff;	
+    color: #fff;
     text-transform: uppercase;
-    max-width: 175px;
     margin: $spacing-unit--double auto;
     text-align: center;
     font-size: $font-size;
+    @include vertical-align;
+    margin-top: -$spacing-unit * 3;
 
     @media screen and (min-width: $menu-switch) {
-	text-align: left;
-	margin: 0;
-	@include vertical-align;
+	//margin: 0;
+	font-size: $font-size * 2.25;
     }
-    
+
     @media screen and (min-width: $desk-start) {
-	padding-left: $spacing-unit--double;
-	max-width: 225px;
-	font-size: $font-size * 1.25;
+	font-weight: 100;
     }
 }
 
-.hero--home__item--two, 
-.hero--home__item {	
+.hero__text--home p:first-child {
+    font-weight: 100;
+    line-height: 1;
+    font-size: $font-size * 2;
+
+    @media screen and (min-width: $menu-switch) {
+	font-size: $font-size * 3;
+    }
+}
+
+.hero__text--home p:nth-child(2) {
+    line-height: 1;
+
+    @media screen and (min-width: $menu-switch) {
+	font-size: $font-size * 2;
+    }
+
+    @media screen and (min-width: $desk-start) {
+	font-size: $font-size * 2.25;
+    }
+}
+
+.hero--home__item--two,
+.hero--home__item {
     position: relative;
 }
 
@@ -89,7 +110,7 @@
     @include media(670px) {
 	max-width: 485px;
     }
-    
+
     @include media($desk-up-break) {
 	max-width: 611px;
     }

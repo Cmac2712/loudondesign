@@ -55,10 +55,12 @@ body {
 
 	    @media screen and (min-width: $menu-switch) {
 		@include span-columns(6);
+		margin-bottom: $spacing-unit * 2;
 	    }
 
 	    @media screen and (min-width: $desk-start) {
-		@include span-columns(3);
+		@include span-columns(2);
+		margin: 0;
 	    }
 	}
 
@@ -70,6 +72,7 @@ body {
 	    }
 
 	    @media screen and (min-width: $desk-start) {
+		padding: 0 $spacing-unit * 3;
 		@include span-columns(3);
 	    }
 	}
@@ -80,12 +83,18 @@ body {
 
 	    @media screen and (min-width: $menu-switch) {
 		@include span-columns(3);
+		padding: $spacing-unit * 3 0;
 	    }
 
 	    @media screen and (min-width: $desk-start) {
-		@include span-columns(2);
+		@include span-columns(3);
+		padding: 0;
 	    }
 	}
+
+	    .contact--global img {
+		min-width: 350px;
+	    }
 
 .contact__details h2 {
     @extend .gamma;

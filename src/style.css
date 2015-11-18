@@ -417,6 +417,9 @@ input {
 .lead, .hero--about .info-item__body p:first-child, .about__body p:nth-child(2) {
   font-size: 17.6px; }
 
+.mega {
+  font-size: 48px; }
+
 .highlight,
 a.highlight {
   color: #a70303; }
@@ -579,7 +582,8 @@ WRAPS
       float: left;
       display: block;
       margin-right: 0%;
-      width: 50%; }
+      width: 50%;
+      margin-bottom: 20px; }
       .contact--second:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 1024px) {
@@ -587,7 +591,8 @@ WRAPS
       float: left;
       display: block;
       margin-right: 0%;
-      width: 25%; }
+      width: 16.66667%;
+      margin: 0; }
       .contact--second:last-child {
         margin-right: 0; } }
 
@@ -608,6 +613,7 @@ WRAPS
         margin-right: 0; } }
   @media screen and (min-width: 1024px) {
     .contact--third {
+      padding: 0 30px;
       float: left;
       display: block;
       margin-right: 0%;
@@ -628,7 +634,8 @@ WRAPS
       float: left;
       display: block;
       margin-right: 0%;
-      width: 25%; }
+      width: 25%;
+      padding: 30px 0; }
       .contact--global:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 1024px) {
@@ -636,9 +643,13 @@ WRAPS
       float: left;
       display: block;
       margin-right: 0%;
-      width: 16.66667%; }
+      width: 25%;
+      padding: 0; }
       .contact--global:last-child {
         margin-right: 0; } }
+
+.contact--global img {
+  min-width: 350px; }
 
 .contact__details h2 {
   margin-bottom: 10px;
@@ -757,7 +768,8 @@ WRAPS
  * CV
  */
 .cv {
-  font-size: 0; }
+  font-size: 0;
+  padding: 0 35px; }
 
 .cv h1 {
   font-size: 1.5rem;
@@ -767,15 +779,26 @@ WRAPS
   font-size: 16px;
   display: inline-block;
   vertical-align: top;
-  width: 20%;
+  width: 50%;
   margin: 0;
   padding: 0 30px 30px 0; }
+  @media screen and (min-width: 640px) {
+    .cv dl {
+      width: 50%; } }
+  @media screen and (min-width: 640px) {
+    .cv dl {
+      width: 33%; } }
+  @media screen and (min-width: 1024px) {
+    .cv dl {
+      width: 20%; } }
 
 .cv dt {
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 10px 0; }
 
 .cv dd {
-  margin: 0; }
+  margin: 0;
+  color: #666; }
 
 /**
  *  GET STARTED
@@ -799,36 +822,37 @@ WRAPS
  * HOME HERO BANNER
  */
 .hero--home {
-  background-color: #6090a6;
+  position: relative;
+  background-image: url("img/home-hero-background.png");
   overflow: hidden;
   height: 375px;
   padding-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  z-index: 999; }
   @media screen and (min-width: 1024px) {
     .hero--home {
       height: 475px; } }
-
-.hero--home.hero--home:before {
-  background-image: url("img/home-hero-background.svg");
-  opacity: 1; }
 
 .hero--home:after {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 40px;
   width: 50%;
   background-color: #fff; }
   @media screen and (min-width: 600px) {
     .hero--home:after {
-      content: ""; } }
+      content: "";
+      height: 40px; } }
+  @media screen and (min-width: 1024px) {
+    .hero--home:after {
+      height: 60px; } }
 
 .hero--home .wrap:before {
   content: "";
   position: absolute;
   left: 50%;
   right: -50%;
-  bottom: 0;
+  bottom: -30px;
   height: 20px;
   z-index: 7;
   box-shadow: inset 3px -6px 12px rgba(0, 0, 0, 0.1); }
@@ -839,24 +863,38 @@ WRAPS
 .hero__text--home {
   color: #fff;
   text-transform: uppercase;
-  max-width: 175px;
   margin: 20px auto;
   text-align: center;
-  font-size: 16px; }
+  font-size: 16px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: -30px; }
   @media screen and (min-width: 600px) {
     .hero__text--home {
-      text-align: left;
-      margin: 0;
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); } }
+      font-size: 36px; } }
   @media screen and (min-width: 1024px) {
     .hero__text--home {
-      padding-left: 20px;
-      max-width: 225px;
-      font-size: 20px; } }
+      font-weight: 100; } }
+
+.hero__text--home p:first-child {
+  font-weight: 100;
+  line-height: 1;
+  font-size: 32px; }
+  @media screen and (min-width: 600px) {
+    .hero__text--home p:first-child {
+      font-size: 48px; } }
+
+.hero__text--home p:nth-child(2) {
+  line-height: 1; }
+  @media screen and (min-width: 600px) {
+    .hero__text--home p:nth-child(2) {
+      font-size: 32px; } }
+  @media screen and (min-width: 1024px) {
+    .hero__text--home p:nth-child(2) {
+      font-size: 36px; } }
 
 .hero--home__item--two,
 .hero--home__item {
