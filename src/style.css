@@ -823,14 +823,19 @@ WRAPS
  */
 .hero--home {
   position: relative;
-  background-image: url("img/home-hero-background.png");
+  background-image: url("img/home-hero-background--lap.png");
   overflow: hidden;
   height: 375px;
   padding-top: 0;
   margin-bottom: 0;
   z-index: 999; }
+  @media screen and (min-width: 640px) {
+    .hero--home {
+      background-image: url("img/home-hero-background--desk.png");
+      background-position: 100% 100%; } }
   @media screen and (min-width: 1024px) {
     .hero--home {
+      background-image: url("img/home-hero-background.png");
       height: 475px; } }
 
 .hero--home:after {

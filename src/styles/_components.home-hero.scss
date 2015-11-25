@@ -4,14 +4,20 @@
 
 .hero--home {
     position: relative;
-    background-image: url($images-url + 'home-hero-background.png');
+    background-image: url($images-url + 'home-hero-background--lap.png');
     overflow: hidden;
     height: 375px;
     padding-top: 0;
     margin-bottom: 0;
     z-index: 999;
 
+    @media screen and (min-width: $lap-start) {
+	background-image: url($images-url + 'home-hero-background--desk.png');
+	background-position: 100% 100%;
+    }
+
     @include media($desk-up-break) {
+	background-image: url($images-url + 'home-hero-background.png');
 	height: 475px;
     }
 }
