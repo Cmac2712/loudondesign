@@ -49,23 +49,23 @@
 	text-transform: uppercase;
 	display: none;
 
-	@include media-query(desk) { 
+	@include media-query(desk) {
 	    display: inline-block;
 	}
     }
 
     .details__phone a {
-	color: #fff;	
+	color: #fff;
     }
 
     .details__name,
     .details__job-title {
-	display: block;	
+	display: block;
 	width: 100%;
     }
 
     .details__name {
-	font-size: 16px;	
+	font-size: 16px;
 	text-transform: uppercase;
     }
 
@@ -78,7 +78,7 @@
     display: none;
 
     @media screen and (min-width: $menu-switch) {
-	display: block;	
+	display: block;
     }
 }
 
@@ -87,9 +87,15 @@
     display: none;
 
     @media screen and (min-width: $menu-switch) {
-	display: block;	
+	display: block;
     }
 }
+
+    .details--right a {
+	color: #fff;
+	font-size: $font-size;
+	line-height: $font-size * .75;
+    }
 
     .details--right .details__envelope,
     .details--right .details__phone {

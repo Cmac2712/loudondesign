@@ -17,7 +17,7 @@
 		// conditionizr.com
 		// configure environment tests
 		conditionizr.add('safari', /constructor/i.test());
-		conditionizr.add('chrome', !!window.chrome && /google/i.test(navigator.vendor));	
+		conditionizr.add('chrome', !!window.chrome && /google/i.test(navigator.vendor));
 		conditionizr.add('firefox', 'InstallTrigger' in window);
 		conditionizr.add('ie11', /(?:\sTrident\/7\.0;.*\srv:11\.0)/i.test(navigator.userAgent));
 		conditionizr.add('ie10', !!(Function('/*@cc_on return (/^10/.test(@_jscript_version) && /MSIE 10\.0(?!.*IEMobile)/i.test(navigator.userAgent)); @*/')()));
@@ -62,7 +62,7 @@
 		<span class="details__job-title">Designer &amp; Illustrator</span>
 	    </div>
 	    <div class="details details--right">
-		<span class="details__envelope"><span class="icon-envelope"></span>Kick Start Your Project</span>
+		<span class="details__envelope"><span class="icon-envelope"></span><a href="/contact">KICK START YOUR PROJECT</a></span>
 		<span class="details__phone"><span class="icon-phone"></span><a href="tel:07980961805">07572750380</a></span>
 	    </div>
 	    <a href="/" class="main-header__logo">

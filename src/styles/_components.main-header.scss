@@ -1,9 +1,9 @@
 /**
- * MAIN HEADER 
+ * MAIN HEADER
  */
 
 /**
- * MOBILE LINKS 
+ * MOBILE LINKS
  */
 
 .phone--mobile,
@@ -15,15 +15,15 @@
     display: block;
     text-align: center;
 
-    @media screen and (min-width: $menu-switch) { 
+    @media screen and (min-width: $menu-switch) {
 	display: none;
     }
 }
 
 a.phone--mobile {
     display: block;
-    right: 0; 
-    height: 60px;   
+    right: 0;
+    height: 60px;
     border-left: 1px solid #292929;
     text-align: center;
 
@@ -42,7 +42,7 @@ a.phone--mobile {
     }
 
 /**
- * NAV OPEN/CLOSE 
+ * NAV OPEN/CLOSE
  */
 
 .main-nav-button {
@@ -66,7 +66,7 @@ a.phone--mobile {
     height: $spacing-unit--double;
     z-index: 9999;
     @include transition(all 0.25s ease);
-    @include vertical-align; 
+    @include vertical-align;
 }
 
     .hamburger__slice {
