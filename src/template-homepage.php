@@ -1,5 +1,6 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
 
+
 <?php
 
 while (have_posts()) : the_post();
@@ -24,7 +25,7 @@ $get_started_body = get_field('get_started_body');
 		    <div class="home-blocks">
 			<div class="block block--one">
 			    <div class="services">
-				<h2 class="services__title">Can I help your business?</h2>
+				<h2 class="services__title">Design Services</h2>
 				<p class="lead">If you are looking for <a href="" class="highlight em">Logo Design</a>, <a href="#" class="highlight em">Graphic Design</a> or <a href="#" class="highlight em">Web Design</a> you have come to the right place.</p>
 				<p class="services__desc">I have worked on a wide range of design projects for clients around the globe. I love the challenge of varied work and generation revenue through well thought out design solutions.</p>
 
