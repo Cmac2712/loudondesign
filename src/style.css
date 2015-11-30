@@ -855,7 +855,7 @@ WRAPS
       height: 40px; } }
   @media screen and (min-width: 1024px) {
     .hero--home:after {
-      height: 60px; } }
+      height: 40px; } }
 
 .hero--home .wrap:before {
   content: "";
