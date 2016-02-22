@@ -4,6 +4,7 @@
 
 .hero {
    min-height: 375px; 
+   background-size: cover;
 
    @include media($desk-up-break) {
 	min-height: 475px; 

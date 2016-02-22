@@ -1,0 +1,61 @@
+.case-block {
+    @include outer-container(100%);	
+    height: auto;
+    padding-bottom: $spacing-unit*6;
+    margin-bottom: 0;
+}
+
+    .case-intro + .case-block .wrap:after {
+	content: "";
+	position: absolute;
+	left: $spacing-unit;
+	right: $spacing-unit;
+	top: -$spacing-unit * 6;
+	margin: auto;
+	border-top: 1px solid $ui-color;
+    }
+	
+	.case-list * + * {
+	    margin-left: $spacing-unit * 2;
+	}
+
+    .case-block:nth-child(2n) {
+	background-color: $ui-color;
+    }
+
+    .case-block__text, 
+    .case-block__image-outer {
+	@include span-columns(12);
+
+	@media screen and (min-width: $lap-start)  {
+	   @include span-columns(6);
+	}
+    }
+
+    .case-block__text {
+	text-align: justify;
+    }
+
+    .case-block__text p {
+	font-style: italic;
+    }
+
+    .case-block__image-outer {
+
+	@media screen and (min-width: $lap-start)  {
+	    padding-left: $spacing-unit*5;
+	}
+    }
+    
+	.case-block__image {
+	    width: 100%;
+	    max-width: 430px;
+	    background-color: #ddd;
+	    margin: 0 auto;
+
+	    @media screen and (min-width: $lap-start)  {
+		float: right;
+	    }
+	}
+
+.case-block__text p:nth-child(2) { font-style: italic; } 

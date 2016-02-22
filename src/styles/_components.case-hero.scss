@@ -1,0 +1,113 @@
+/**
+ * HOME HERO BANNER
+ */
+
+.hero--case {
+    position: relative;
+    //background-image: url($images-url + 'case-hero-background--lap.png');
+    overflow: hidden;
+    height: 375px;
+    padding-top: 0;
+    margin-bottom: 0;
+    z-index: 999;
+
+    @media screen and (min-width: $lap-start) {
+//	background-image: url($images-url + 'case-hero-background--desk.png');
+	background-position: 100% 100%;
+    }
+
+    @include media($desk-up-break) {
+	background-image: url($images-url + 'case-hero-background.png');
+	height: 475px;
+    }
+}
+
+.hero__text--case {
+    color: #fff;
+    text-transform: uppercase;
+    margin: $spacing-unit--double auto;
+    text-align: center;
+    font-size: $font-size;
+    @include vertical-align;
+    margin-top: -$spacing-unit * 3;
+
+    @media screen and (min-width: $menu-switch) {
+	//margin: 0;
+	font-size: $font-size * 2.25;
+    }
+
+    @media screen and (min-width: $desk-start) {
+	font-weight: 100;
+    }
+}
+
+.hero__text--case p:first-child {
+    font-weight: 100;
+    line-height: 1;
+    font-size: $font-size * 2;
+
+    @media screen and (min-width: $menu-switch) {
+	font-size: $font-size * 3;
+    }
+}
+
+.hero__text--case p:nth-child(2) {
+    line-height: 1;
+
+    @media screen and (min-width: $menu-switch) {
+	font-size: $font-size * 2;
+    }
+
+    @media screen and (min-width: $desk-start) {
+	font-size: $font-size * 2.25;
+    }
+}
+
+.hero--case__item--two,
+.hero--case__item {
+    position: relative;
+}
+
+.hero--case__item {
+    margin: 0 auto;
+    max-width: 450px;
+
+    @media screen and (min-width: $menu-switch) {
+	position: absolute;
+	bottom: -$spacing-unit*2;
+	right: -$spacing-unit--half;
+	max-width: 435px;
+    }
+
+    @include media(670px) {
+	max-width: 485px;
+    }
+
+    @include media($desk-up-break) {
+	max-width: 611px;
+    }
+}
+
+.hero--case__item--two {
+    display: none;
+    position: absolute;
+    bottom: -$spacing-unit;
+    @include outer-container(100%);
+
+    @media screen and (min-width: 750px) {
+	display: block;
+	right: 40%;
+	max-width: 250px;
+    }
+
+    @include media($desk-up-break + 100) {
+	right: $spacing-unit*52;
+	max-width: 100%;
+    }
+}
+
+.hero--case__item--two img,
+.hero--case__item img {
+    max-width: 100%;
+}
+

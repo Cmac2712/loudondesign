@@ -22,11 +22,11 @@ gulp.task('watch', function () {
 
 gulp.task('sass', function () {
       //console.log('Compiling SASS');
-      gulp.src('./styles/style.scss')
-	  //.pipe(sourcemaps.init())
-	  //.pipe(sass().on('error', sass.logError))
+      gulp.src('./styles/*.scss')
+	  .pipe(sourcemaps.init())
+	  .pipe(sass().on('error', sass.logError))
 	  .pipe(sass())
-	  //.pipe(sourcemaps.write('./'))
+	  .pipe(sourcemaps.write('./'))
 	  .pipe(gulp.dest('./'))
 	  .pipe(bs.stream());
 });

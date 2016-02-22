@@ -365,7 +365,7 @@
 	@media screen and (min-width: $desk-start) { min-height: 486px;  }
     }
 
-	.trespass {
+	.block .trespass {
 	    background-image: url($images-url + 'trespass.png');	
 	    background-size: cover;
 	    background-position: 50% 0;
